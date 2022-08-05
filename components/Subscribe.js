@@ -9,7 +9,7 @@ export default function Subscribe() {
             <div className="lg:w-0 lg:flex-1">
               <h2 className="text-3xl font-extrabold tracking-tight text-white">Sign up for our email list</h2>
               <p className="mt-4 max-w-3xl text-lg text-indigo-100 pt-2">
-                Stay in the loop with events, art shows, classes and retail drops going down at <span className="font-hurricane text-4xl">the</span> <span className="font-hurricane text-6xl">Ivy</span>
+                <span className="underline decoration-pink-500">Stay in the loop</span> with events, art shows, classes and retail drops going down at <span className="font-hurricane text-4xl">the</span> <span className="font-hurricane text-6xl">Ivy</span>
               </p>
             </div>
             <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
