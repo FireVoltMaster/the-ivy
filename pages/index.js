@@ -19,7 +19,7 @@ export default function Home() {
 
       <main>
 
-        <h1 className="text-2xl">The Ivy</h1>
+        <h1 className="font-hurricane text-8xl">the Ivy</h1>
 
         <Hero />
 
