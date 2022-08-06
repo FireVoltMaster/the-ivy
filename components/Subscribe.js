@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 
 export default function Subscribe() {
@@ -7,10 +8,31 @@ export default function Subscribe() {
         <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
           <div className="py-10 px-6 bg-indigo-700 rounded-3xl sm:py-16 sm:px-12 lg:p-20 lg:flex lg:items-center">
             <div className="lg:w-0 lg:flex-1">
-              <h2 className="text-3xl font-extrabold tracking-tight text-white">Sign up for our email list</h2>
-              <p className="mt-4 max-w-3xl text-lg text-indigo-100 pt-2">
+              <h2 className="text-4xl font-thin tracking-tight text-white">Sign up for our email list</h2>
+              {/* <p className="mt-4 max-w-3xl text-lg text-indigo-100 pt-2">
                 <span className="underline decoration-pink-500">Stay in the loop</span> with events, art shows, classes and retail drops going down at <span className="font-hurricane text-4xl">the</span> <span className="font-hurricane text-6xl">Ivy</span>
+              </p> */}
+
+              <p className="mt-4 max-w-3xl text-lg text-indigo-100 pt-2">
+                <span className="underline decoration-pink-500">Stay in the loop</span> with events, 
               </p>
+
+              <p className="max-w-3xl text-lg text-indigo-100">
+              art shows, classes, and retail drops going down at
+              </p>
+
+              <div className="-mb-10">
+                <Image 
+                    src="/images/the-ivy-white.png"
+                    width={140}
+                    height={100}
+                    alt="logo"
+                />
+            </div>
+
+
+
+
             </div>
             <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
               <form className="sm:flex">

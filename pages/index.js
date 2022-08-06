@@ -8,6 +8,8 @@ import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Subscribe from '../components/Subscribe'
 import ThreeColCard from '../components/ThreeColCard'
+import CalModal from '../components/CalModal'
+import CalDisclosure from '../components/CalDisclosure'
 
 // CALENDARS
 import AugustCalendar from '../components/Calendar/Months/August22/August22Calendar'
@@ -29,12 +31,19 @@ export default function Home() {
 
         <Hero />
 
-        <div className="px-8 md:px-20 lg:px-28 xl:px-32 pb-10">
+        {/* <div className="flex justify-center">
+          <CalModal />
+        </div> */}
+
+        <CalDisclosure />
+
+        {/* <div className="px-8 md:px-20 lg:px-28 xl:px-32 pb-10">
         <AugustCalendar />
-        </div>
+        </div> */}
 
+        
         <Subscribe />
-
+        
         <ThreeColCard />
         
       </main>

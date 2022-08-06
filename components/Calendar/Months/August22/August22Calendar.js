@@ -9,9 +9,9 @@ function classNames(...classes) {
     return (
       <div className="lg:flex lg:h-full lg:flex-col">
         <header className="relative z-20 flex items-center justify-between border-b border-gray-200 py-4 px-6 lg:flex-none">
-          <h1 className="text-lg font-semibold text-gray-300">
+          {/* <h1 className="text-lg font-semibold text-gray-300">
             <time dateTime="2022-01">August</time>
-          </h1>
+          </h1> */}
         </header>
   
         <div className="shadow ring-1 ring-black ring-opacity-5 lg:flex lg:flex-auto lg:flex-col">

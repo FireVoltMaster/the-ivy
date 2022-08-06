@@ -1,6 +1,6 @@
 import React from 'react'
-import { InstagramEmbed } from 'react-social-media-embed';
-import Image from 'next/image';
+import { InstagramEmbed } from 'react-social-media-embed'
+import Image from 'next/image'
   
   export default function ThreeColCard() {
     return (
@@ -10,7 +10,7 @@ import Image from 'next/image';
         </div>
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center">
-            <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">#theivylbny</h2>
+            <h2 className="text-4xl tracking-tight font-thin text-gray-900 sm:text-4xl">#theivylbny</h2>
             <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
               👀 peep into the world of
             </p>
