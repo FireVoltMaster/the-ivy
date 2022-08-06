@@ -13,9 +13,9 @@ export default function InstagramFeed() {
 
         <InstagramEmbed 
             url="https://www.instagram.com/p/CfwrhntJQ8k/?igshid=YmMyMTA2M2Y=" 
-            // width={328} 
+            width={328} 
             // width="50%"
-            width={420}
+            // width={420}
         />
 
     </div>

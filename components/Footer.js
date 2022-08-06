@@ -73,7 +73,7 @@ const navigation = {
               </p>
               <div className="flex space-x-2 md:space-x-4 lg:space-x-6 pt-2">
                 {navigation.social.map((item) => (
-                  <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+                  <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500" target="_blank" rel="noopener noreferrer">
                     <span className="sr-only">{item.name}</span>
                     <item.icon className="h-6 w-6" aria-hidden="true" />
                   </a>
