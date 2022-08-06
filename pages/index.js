@@ -10,6 +10,7 @@ import Subscribe from '../components/Subscribe'
 import ThreeColCard from '../components/ThreeColCard'
 import CalModal from '../components/CalModal'
 import CalDisclosure from '../components/CalDisclosure'
+import Between from '../components/Between'
 
 // CALENDARS
 import AugustCalendar from '../components/Calendar/Months/August22/August22Calendar'
@@ -41,8 +42,11 @@ export default function Home() {
         <AugustCalendar />
         </div> */}
 
+        <Between />
         
         <Subscribe />
+
+        <Between />
         
         <ThreeColCard />
         
