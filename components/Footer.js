@@ -3,30 +3,6 @@ import Image from "next/image"
 import GoogleMap from "./GoogleMap"
 
 const navigation = {
-    // solutions: [
-    //   { name: 'Marketing', href: '#' },
-    //   { name: 'Analytics', href: '#' },
-    //   { name: 'Commerce', href: '#' },
-    //   { name: 'Insights', href: '#' },
-    // ],
-    // support: [
-    //   { name: 'Pricing', href: '#' },
-    //   { name: 'Documentation', href: '#' },
-    //   { name: 'Guides', href: '#' },
-    //   { name: 'API Status', href: '#' },
-    // ],
-    // company: [
-    //   { name: 'About', href: '#' },
-    //   { name: 'Blog', href: '#' },
-    //   { name: 'Jobs', href: '#' },
-    //   { name: 'Press', href: '#' },
-    //   { name: 'Partners', href: '#' },
-    // ],
-    // legal: [
-    //   { name: 'Claim', href: '#' },
-    //   { name: 'Privacy', href: '#' },
-    //   { name: 'Terms', href: '#' },
-    // ],
     social: [
       {
         name: 'Facebook',
@@ -43,7 +19,7 @@ const navigation = {
       },
       {
         name: 'Instagram',
-        href: '#',
+        href: 'https://www.instagram.com/the_ivy_lbny/',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
@@ -88,7 +64,9 @@ const navigation = {
                 Long Beach, NY&apos;s Premier Art / Event Space and Retail Experience.
               </p>
               <p className="text-gray-500 text-base pt-3">
+                <a href="https://www.google.com/maps/place/1046+W+Beech+St,+Long+Beach,+NY+11561/@40.5859068,-73.7006609,17z/data=!3m1!4b1!4m5!3m4!1s0x89c26f82d2869efb:0x34954dcea50df9f5!8m2!3d40.5859068!4d-73.6984722" target="_blank" rel="noopener noreferrer">
                 1046 W Beech St, Long Beach, NY 11561 
+                </a>
               </p>
               <p className="text-gray-500 text-base">
                 <a href="tel:555-123-456">(555) 123-4567</a>

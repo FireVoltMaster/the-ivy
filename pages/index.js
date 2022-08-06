@@ -7,6 +7,7 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Subscribe from '../components/Subscribe'
+import InstagramFeed from '../components/InstagramFeed'
 
 // CALENDARS
 import AugustCalendar from '../components/Calendar/Months/August22/August22Calendar'
@@ -27,6 +28,8 @@ export default function Home() {
         {/* <h1 className="font-hurricane text-8xl">the Ivy</h1> */}
 
         <Hero />
+
+        <InstagramFeed />
 
         <div className="px-8 md:px-20 lg:px-28 xl:px-32 pb-10">
         <AugustCalendar />
