@@ -41,14 +41,12 @@ export default function Home() {
         {/* <div className="px-8 md:px-20 lg:px-28 xl:px-32 pb-10">
         <AugustCalendar />
         </div> */}
-
-        <Between />
         
         <Subscribe />
-
-        <Between />
         
         <ThreeColCard />
+
+        <Between />
         
       </main>
 

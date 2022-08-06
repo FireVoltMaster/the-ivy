@@ -4,7 +4,15 @@ import Image from 'next/image'
 
 export default function Subscribe() {
     return (
-      <div className="bg-white">
+      <div className="bg-center bg-cover bg-fixed"
+          style={{
+            backgroundImage:
+              "url('/images/ivy-bg.jpg')",
+          }}>
+            {/* <span
+              id="blackOverlay"
+              className="w-full h-full absolute opacity-20 bg-black"
+            ></span> */}
         <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
           <div className="py-10 px-6 bg-indigo-700 rounded-3xl sm:py-16 sm:px-12 lg:p-20 lg:flex lg:items-center">
             <div className="lg:w-0 lg:flex-1">
@@ -61,6 +69,11 @@ export default function Subscribe() {
             </div>
           </div>
         </div>
+        <div
+            className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-16"
+            style={{ transform: "translateZ(0)" }}
+          >
+          </div>
       </div>
     )
   }

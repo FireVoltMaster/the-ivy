@@ -12,10 +12,10 @@ export default function Between() {
                 "url('/images/ivy-bg.jpg')",
             }}
           >
-            <span
+            {/* <span
               id="blackOverlay"
               className="w-full h-full absolute opacity-20 bg-black"
-            ></span>
+            ></span> */}
           </div>
 
           {/* <div className="container relative mx-auto">
