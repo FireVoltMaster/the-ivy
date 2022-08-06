@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.78",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "google-map-react": "^2.2.0",
     "next": "12.2.4",
     "react": "18.2.0",
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.8",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.4",

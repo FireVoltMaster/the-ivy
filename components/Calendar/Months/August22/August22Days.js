@@ -13,7 +13,7 @@ const days = [
       date: '2022-08-07',
       isCurrentMonth: true,
       events: [
-        { id: 1, name: 'Movie Night', time: '10PM', datetime: '', href: '/events/event-test' },
+        { id: 1, name: 'Movie Night', time: '10PM', datetime: '', href: '/events/event-template' },
         // CAN DO MULTIPLE EVENTS PER DAY
       //   { id: 2, name: 'Sales meeting', time: '2PM', datetime: '2022-01-03T14:00', href: '#' },
       ],
@@ -24,7 +24,7 @@ const days = [
     {
       date: '2022-08-11',
       isCurrentMonth: true,
-      events: [{ id: 3, name: 'Sip N Paint', time: '8PM', datetime: '', href: '/events/event-test' }],
+      events: [{ id: 3, name: 'Sip N Paint', time: '8PM', datetime: '', href: '/events/event-template' }],
     },
     { date: '2022-08-12', isCurrentMonth: true, events: [] },
     { date: '2022-08-13', isCurrentMonth: true, events: [] },
@@ -34,7 +34,7 @@ const days = [
       date: '2022-81-16',
       isCurrentMonth: true,
       // isToday: true,
-      events: [{ id: 6, name: "Learn to Tie Dye", time: '3PM', datetime: '', href: '/events/event-test' }],
+      events: [{ id: 6, name: "Learn to Tie Dye", time: '3PM', datetime: '', href: '/events/event-template' }],
     },
     { date: '2022-08-17', isCurrentMonth: true, events: [] },
     { date: '2022-08-18', isCurrentMonth: true, events: [] },
@@ -50,13 +50,13 @@ const days = [
       isCurrentMonth: true,
       // isSelected: true,
       events: [
-        { id: 4, name: 'Beach party', time: '1PM', datetime: '', href: '/events/event-test' },
-        { id: 5, name: 'Wiz Kalifa signing', time: '8PM', datetime: '', href: '/events/event-test' },
+        { id: 4, name: 'Beach party', time: '1PM', datetime: '', href: '/events/event-template' },
+        { id: 5, name: 'Wiz Kalifa signing', time: '8PM', datetime: '', href: '/events/event-template' },
       ],
     },
     { date: '2022-08-27', isCurrentMonth: true, events: [] },
     { date: '2022-08-28', isCurrentMonth: true, events: [
-        { id: 2, name: 'GRAND OPENING', time: '6PM', datetime: '', href: '/events/event-test' }
+        { id: 2, name: 'GRAND OPENING', time: '6PM', datetime: '', href: '/events/event-template' }
     ] },
     { date: '2022-08-29', isCurrentMonth: true, events: [] },
     { date: '2022-08-30', isCurrentMonth: true, events: [] },
@@ -69,7 +69,7 @@ const days = [
     { date: '2022-09-06', events: [] },
     {
       date: '2022-09-07',
-      events: [{ id: 7, name: 'End of Summer Bash', time: '9PM', datetime: '', href: '/events/event-test' }],
+      events: [{ id: 7, name: 'End of Summer Bash', time: '9PM', datetime: '', href: '/events/event-template' }],
     },
     { date: '2022-09-08', events: [] },
     { date: '2022-09-09', events: [] },
