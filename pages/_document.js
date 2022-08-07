@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html lang="en" className="scroll-smooth bg-black antialiased">
+    <Html lang="en" className="scroll-smooth bg-white antialiased">
         <Head>
             <meta charSet="utf-8" />
             {/* <link rel="icon" type="image/png" href="/images/favicon.png" /> */}

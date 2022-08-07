@@ -41,8 +41,10 @@ export default function Nav() {
                 </div>
 
                 {/* MAIN NAV LINKS */}
-                <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
+                {/* <div className="hidden sm:block sm:ml-6"> */}
+                <div className="block sm:ml-6">
+                  {/* <div className="pl-28 lg:pl-96 flex space-x-5"> */}
+                  <div className="pl-26 lg:pl-5 flex space-x-5">
 
                     <Link href="/">
                       <a className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
@@ -73,27 +75,25 @@ export default function Nav() {
               </div>
 
 
-              <div className="-mr-2 flex sm:hidden">
+              {/* <div className="-mr-2 flex sm:hidden"> */}
 
                 {/* MOBILE MENU BUTTON */}  
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-neon-pink hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                {/* <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-neon-pink hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
                     <MenuIcon className="block h-6 w-6" aria-hidden="true" />
-                    // <FontAwesomeIcon style={{fontSize:"25px"}} icon={faEllipsisVertical} />
                   )}
-                </Disclosure.Button>
+                </Disclosure.Button> */}
 
-              </div>
+              {/* </div> */}
             </div>
           </div>
 
             {/* MOBILE MENU  */}
-          <div className="">
+          {/* <div className="">
           <Transition
-            // as={Fragment}
             enter="duration-300 ease-in"
             enterFrom="opacity-0 scale-50"
             enterTo="opacity-100 scale-100"
@@ -104,7 +104,7 @@ export default function Nav() {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
 
-                {/* MOBILE LINKS */}
+                
               <Link href="/">
                   <a
                   className="text-neon-pink flex flex-row space-x-2 hover:text-gray-700 px-3 py-2 justify-center rounded-md text-base font-medium"
@@ -136,7 +136,7 @@ export default function Nav() {
             </div>
           </Disclosure.Panel>
           </Transition>
-          </div>
+          </div> */}
         </div>
       )}
     </Disclosure>

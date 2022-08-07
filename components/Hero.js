@@ -35,7 +35,7 @@ export default function Hero() {
 
                 </div>
                 <div className="">
-                <p className="text-white text-3xl">Long Beach, NY&apos;s Premier Art / Event Space and Retail Experience.</p>
+                  <p className="text-white text-3xl">Long Beach, NY&apos;s Premier Art / Event Space and Retail Experience</p>
                 </div>
               </div>
             </div>
