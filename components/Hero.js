@@ -21,16 +21,15 @@ export default function Hero() {
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                {/* <div className="hover:scale-125 ease-in-out duration-200"> */}
                 <div className="">
                   
-                  
                     <Image
-                      // className="h-48 w-full object-cover"
-                      src="/images/the-ivy-white.png"
-                      width={300}
-                      height={250}
-                      alt="adam laptop"
-                      blurDataURL="/images/the-ivy-white.png"
+                      src="/images/the-ivy-neon.png"
+                      width={350}
+                      height={300}
+                      alt="The Ivy"
+                      blurDataURL="/images/the-ivy-neon.png"
                       placeholder="blur"
                     />
 
