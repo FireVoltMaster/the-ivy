@@ -15,8 +15,7 @@ export default function Home() {
     <div>
       <Head>
         <title>The Ivy</title>
-        <meta name="description" content="The Ivy is an art, apparel and event space in Long Beach, New York" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="The Ivy is a premier art / event space and retail experience in Long Beach, New York." />
       </Head>
 
       <Nav />

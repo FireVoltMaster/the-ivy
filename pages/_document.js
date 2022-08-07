@@ -5,19 +5,18 @@ export default function Document() {
     <Html lang="en" className="scroll-smooth bg-white antialiased">
         <Head>
             <meta charSet="utf-8" />
-            {/* <link rel="icon" type="image/png" href="/images/favicon.png" /> */}
+            <link rel="icon" type="image/png" href="/images/favicon.png" />
             <meta name="robots" content="index, follow" />
 
                 {/* OPEN GRAPH */}
-            {/* <meta property="og:site_name" content="CUSTOM CONTENT HERE" key="ogsitename" />
-            <meta property="og:title" content="CUSTOM CONTENT HERE" key="og:title" />
-            <meta property="og:description" content="CUSTOM CONTENT HERE" key="ogdesc" /> */}
-            {/* <meta property="og:url" content="CUSTOM URL HERE" key="ogurl" /> */}
-            {/* <meta property="og:image" content="https://www.CUSTOM URL HERE.com/images/PIC PATH HERE.png" key="ogimage" /> */}
-                {/* UNCOMMENT AFTER DEPLOYMENT TO URL */}
+            <meta property="og:site_name" content="The Ivy" key="ogsitename" />
+            <meta property="og:title" content="The Ivy" key="og:title" />
+            <meta property="og:description" content="The Ivy is a premier art / event space and retail experience in Long Beach, New York." key="ogdesc" />
+            <meta property="og:url" content="https://www.theivylbny.com" key="ogurl" /> 
+            <meta property="og:image" content="https://www.theivylbny.com/images/the-ivy-neon.png" key="ogimage" />
             <meta property="og:type" content="website" />
 
-            {/* <link rel="canonical" href="https://www.CUSTOM URL HERE.com/" /> */}
+            <link rel="canonical" href="https://www.theivylbny.com/" />
 
                 {/* FAVICONS  */}
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

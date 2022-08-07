@@ -1,7 +1,9 @@
 # the-ivy 🌿
 
 ### ℹ️ `About:` 
-A marketing / E-Commerce website for The Ivy in Long Beach, NY.
+A marketing / E-Commerce website for The Ivy in Long Beach, NY.  
+
+View live: [theivylbny.com](https://www.theivylbny.com)
 
 ### 📚 `Tech Stack:`
 | JavaScript | Node.js | React | Tailwind CSS | Next.js | SendGrid | Vercel | MailChimp |
