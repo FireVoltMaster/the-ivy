@@ -12,7 +12,7 @@ function classNames(...classes) {
 export default function CalDisclosure() {
   return (
     <div id="calendar" className="bg-gray-50">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:py-16 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-20 px-4 sm:py-16 sm:px-6 lg:px-8">
         <div className="mx-auto">
           <h2 className="text-center text-3xl font-thin text-gray-900 sm:text-4xl">See what&apos;s happening at</h2>
           <div className="flex justify-center -mb-10">
