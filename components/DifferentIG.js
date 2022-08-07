@@ -1,3 +1,4 @@
+// NOT USING
 // THIS GRAPHQL QUERY IS OUTDATED AND DOES NOT WORK ANYMORE
 
 import React, { useState, useEffect } from "react";
