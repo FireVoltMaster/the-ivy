@@ -14,7 +14,7 @@ export default function Hero() {
           >
             <span
               id="blackOverlay"
-              className="w-full h-full absolute opacity-20 bg-black"
+              className="w-full h-full absolute opacity-30 bg-black"
             ></span>
           </div>
 
@@ -33,6 +33,9 @@ export default function Hero() {
                       placeholder="blur"
                     />
 
+                </div>
+                <div className="">
+                <p className="text-white text-3xl">Long Beach, NY&apos;s Premier Art / Event Space and Retail Experience.</p>
                 </div>
               </div>
             </div>

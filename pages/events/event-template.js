@@ -1,15 +1,45 @@
 import React from 'react'
 import Image from 'next/image'
+import Head from 'next/head'
+import Link from 'next/link'
 import Footer from '../../components/Footer'
 
 export default function EventTemplate() {
   return (
     <div className="bg-white overflow-hidden">
+      <Head>
+          <title>Event at The Ivy</title>
+          <meta name="description" content="Event happening at The Ivy in Long Beach, New York." />
+          <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className="flex justify-center pt-3 -mb-36">
+        <Image
+          src="/images/the-ivy.png"
+          alt="the ivy"
+          width={165}
+          height={125}
+        />
+      </div>
+      <div className="pl-5">
+        <Link href="/">
+            <button
+                type="button"
+                className="z-50 px-3.5 mt-8 py-2 bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 text-white hover:bg-gradient-to-t from-neon-pink via-neon-pink to-pink-400 hover:text-white font-light rounded-md text-lg flex flex-row items-center"
+            >
+              <a className="flex flex-row">
+              <svg className="w-5 h-5 pt-2" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z"/>
+              </svg>
+                Back
+              </a>
+            </button>
+        </Link>
+      </div>
       <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
-            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">8.28.22</h2>
+            <h2 className="text-base text-neon-pink font-semibold tracking-wide uppercase">8.28.22</h2>
             <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Grand Opening
             </h3>
@@ -34,7 +64,7 @@ export default function EventTemplate() {
                   height={20}
                   patternUnits="userSpaceOnUse"
                 >
-                  <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                  <rect x={0} y={0} width={4} height={4} className="text-neon-pink" fill="currentColor" />
                 </pattern>
               </defs>
               <rect width={404} height={384} fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />

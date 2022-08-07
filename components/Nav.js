@@ -1,7 +1,144 @@
-import React from 'react'
+// import { Fragment } from 'react'
+import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { BellIcon, MenuIcon, XIcon, HomeIcon } from '@heroicons/react/outline'
+import Link from 'next/link'
+import Image from 'next/image'
+
 
 export default function Nav() {
   return (
-    <div>Nav</div>
+    <Disclosure as="nav" className="fixed bg-white/70 backdrop-blur-2xl w-screen z-40">
+      {({ open }) => (
+        <div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between h-16">
+              <div className="flex items-center">
+
+                {/* NAVBAR IMAGES */}
+                <div className="flex-shrink-0">
+
+                    {/* MOBILE */}
+                  <div className="block lg:hidden h-8 w-auto">
+                    <Image
+                      // className="block lg:hidden h-8 w-auto"
+                      src="/images/the-ivy.png"
+                      alt="the ivy"
+                      width={110}
+                      height={65}
+                    />
+                  </div>
+
+                    {/* LARGE SCREEN */}
+                  <div className="hidden lg:block h-32 w-auto pt-10">
+                    <Image
+                      // className="hidden lg:block h-32 w-auto"
+                      src="/images/the-ivy.png"
+                      alt="the ivy"
+                      width={120}
+                      height={75}
+                    />
+                  </div>
+                </div>
+
+                {/* MAIN NAV LINKS */}
+                <div className="hidden sm:block sm:ml-6">
+                  <div className="flex space-x-4">
+
+                    <Link href="/">
+                      <a className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                        Home
+                      </a>
+                    </Link>
+
+                    {/* <Link href="/projects">
+                      <a className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                        About
+                      </a>
+                    </Link> */}
+
+                    <Link href="#calendar">
+                      <a className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                        Calendar
+                      </a>
+                    </Link>
+
+                    <Link href="/shop">
+                      <a className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                        Shop
+                      </a>
+                    </Link>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="-mr-2 flex sm:hidden">
+
+                {/* MOBILE MENU BUTTON */}  
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-neon-pink hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    // <FontAwesomeIcon style={{fontSize:"25px"}} icon={faEllipsisVertical} />
+                  )}
+                </Disclosure.Button>
+
+              </div>
+            </div>
+          </div>
+
+            {/* MOBILE MENU  */}
+          <div className="">
+          <Transition
+            // as={Fragment}
+            enter="duration-300 ease-in"
+            enterFrom="opacity-0 scale-50"
+            enterTo="opacity-100 scale-100"
+            leave="duration-200 ease-out"
+            leaveFrom="opacity-100 scale-100"
+            leaveTo="opacity-0 scale-95"
+          >
+          <Disclosure.Panel className="sm:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1">
+
+                {/* MOBILE LINKS */}
+              <Link href="/">
+                  <a
+                  className="text-neon-pink flex flex-row space-x-2 hover:text-gray-700 px-3 py-2 justify-center rounded-md text-base font-medium"
+                  >
+                    Home
+                  </a>
+              </Link>
+
+              <Link href="#calendar">
+                <a
+                  className="text-neon-pink flex flex-row space-x-2 hover:text-gray-700 px-3 py-2 justify-center rounded-md text-base font-medium"
+                >
+                  Calendar
+                </a>
+              </Link>
+
+              <Link href="/shop">
+                <a
+                  className="text-neon-pink flex flex-row space-x-2 hover:text-gray-700 px-3 py-2 justify-center rounded-md text-base font-medium"
+                >
+                  Shop
+                </a>
+              </Link>
+
+            </div>
+
+            <div className="pt-4 pb-3 border-t border-white/70">
+
+            </div>
+          </Disclosure.Panel>
+          </Transition>
+          </div>
+        </div>
+      )}
+    </Disclosure>
   )
 }

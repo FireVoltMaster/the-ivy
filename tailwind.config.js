@@ -8,7 +8,10 @@ module.exports = {
     extend: {
       fontFamily: {
         hurricane: ['Hurricane', 'sans-serif']
-      }
+      },
+      colors: {
+        'neon-pink': '#Fa2fbd',
+      },
     },
   },
   plugins: [

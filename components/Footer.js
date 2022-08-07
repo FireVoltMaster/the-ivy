@@ -63,17 +63,17 @@ const navigation = {
               <p className="text-gray-500 text-base">
                 Long Beach, NY&apos;s Premier Art / Event Space and Retail Experience.
               </p>
-              <p className="text-gray-500 text-base pt-3">
+              <p className="text-gray-500 hover:text-neon-pink text-base pt-3">
                 <a href="https://www.google.com/maps/place/1046+W+Beech+St,+Long+Beach,+NY+11561/@40.5859068,-73.7006609,17z/data=!3m1!4b1!4m5!3m4!1s0x89c26f82d2869efb:0x34954dcea50df9f5!8m2!3d40.5859068!4d-73.6984722" target="_blank" rel="noopener noreferrer">
                 1046 W Beech St, Long Beach, NY 11561 
                 </a>
               </p>
-              <p className="text-gray-500 text-base">
+              <p className="text-gray-500 hover:text-neon-pink text-base">
                 <a href="tel:555-123-456">(555) 123-4567</a>
               </p>
               <div className="flex space-x-2 md:space-x-4 lg:space-x-6 pt-2">
                 {navigation.social.map((item) => (
-                  <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500" target="_blank" rel="noopener noreferrer">
+                  <a key={item.name} href={item.href} className="text-gray-400 hover:text-neon-pink" target="_blank" rel="noopener noreferrer">
                     <span className="sr-only">{item.name}</span>
                     <item.icon className="h-6 w-6" aria-hidden="true" />
                   </a>
@@ -95,7 +95,7 @@ const navigation = {
           </div>
           <div className="mt-12 border-t border-gray-200 pt-8">
             <p className="text-sm text-gray-400 xl:text-center">&copy; 2022 The Ivy, All rights reserved.</p>
-            <p className="xl:text-center lg:text-left text-xs text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-teal-400">Made with <span className="text-red-600">❤️</span> in NYC by White Rabbit Design</p>
+            <p className="xl:text-center lg:text-left text-xs text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-green-400">Made with <span className="text-red-600">❤️</span> in NYC by White Rabbit Design</p>
           </div>
         </div>
       </footer>
