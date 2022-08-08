@@ -8,6 +8,7 @@ import Hero from '../components/Hero'
 import Subscribe from '../components/Subscribe'
 import ThreeColCard from '../components/ThreeColCard'
 import CalDisclosure from '../components/CalDisclosure'
+import ClassImages from '../components/ClassImages'
 
 
 export default function Home() {
@@ -23,6 +24,8 @@ export default function Home() {
       <main>
 
         <Hero />
+
+        <ClassImages />
 
         <CalDisclosure />
 
