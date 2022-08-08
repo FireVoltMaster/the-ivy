@@ -33,8 +33,8 @@ export default function Hero() {
                     />
 
                 </div>
-                <div className="py-5 px-1 bg-neon-pink/80 rounded-2xl sm:py-16 sm:px-10 lg:p-20 lg:items-center">
-                  <p className="text-white text-3xl font-thin">
+                <div className="py-5 px-1 bg-neon-pink/80 rounded-2xl sm:py-10 sm:px-10 lg:p-10 lg:items-center">
+                  <p className="text-white text-xl lg:text-3xl font-thin">
                     The Ivy on Beech Street, in the heart of Long Beach, NY carries unique clothing and home goods. We also create and curate DIY classes focusing on the handmade and art events to showcase local talent.
                   </p>
                 </div>

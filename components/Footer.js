@@ -71,6 +71,10 @@ const navigation = {
               <p className="text-gray-500 hover:text-neon-pink text-base">
                 <a href="tel:555-123-456">(555) 123-4567</a>
               </p>
+              <p className="text-gray-500 hover:text-neon-pink text-base">
+              <a href="mailto:info@theivylbny.com">info@theivylbny.com</a>
+              </p>
+
               <div className="flex space-x-2 md:space-x-4 lg:space-x-6 pt-2">
                 {navigation.social.map((item) => (
                   <a key={item.name} href={item.href} className="text-gray-400 hover:text-neon-pink" target="_blank" rel="noopener noreferrer">

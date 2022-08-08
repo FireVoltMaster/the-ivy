@@ -9,6 +9,7 @@ import Subscribe from '../components/Subscribe'
 import ThreeColCard from '../components/ThreeColCard'
 import CalDisclosure from '../components/CalDisclosure'
 import ClassImages from '../components/ClassImages'
+import Contact from '../components/Contact'
 
 
 export default function Home() {
@@ -32,6 +33,8 @@ export default function Home() {
         <Subscribe />
         
         <ThreeColCard />
+
+        {/* <Contact /> */}
         
       </main>
 

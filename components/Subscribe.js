@@ -4,7 +4,8 @@ import Image from 'next/image'
 
 export default function Subscribe() {
     return (
-      <div className="bg-center bg-cover bg-fixed"
+      <div 
+          className="bg-center bg-cover bg-fixed"
           style={{
             backgroundImage:
               "url('/images/ivy-bg.jpg')",
