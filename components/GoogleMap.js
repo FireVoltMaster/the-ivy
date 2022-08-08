@@ -25,7 +25,7 @@ export default function GoogleMap() {
   return (
     // Important! Always set the container height explicitly
     // 100% w & h will fill whatever div you put it in
-    <div style={{ height: '100%', width: '100%' }}>
+    <div style={{ height: '100%', width: '80%' }}>
         <GoogleMapReact
             bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}
             defaultCenter={defaultProps.center}
