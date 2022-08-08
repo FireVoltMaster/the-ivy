@@ -3,6 +3,7 @@ import GoogleMapReact from 'google-map-react';
 
 
 // 1046 W Beech St, Long Beach, NY 11561 
+// 1050 is the correct address
 
 export default function GoogleMap() {
     const defaultProps = {
@@ -32,8 +33,8 @@ export default function GoogleMap() {
             defaultZoom={defaultProps.zoom}
         >
             <LocationPin 
-                lat={40.585947}
-                lng={-73.686339}
+                lat={40.5859092}
+                lng={-73.7007764}
                 // text="The Ivy"
             />
         </GoogleMapReact>

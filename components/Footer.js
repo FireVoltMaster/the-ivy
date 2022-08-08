@@ -64,8 +64,8 @@ const navigation = {
                 Long Beach, NY&apos;s Premier Art / Event Space and Retail Experience.
               </p>
               <p className="text-gray-500 hover:text-neon-pink text-sm pt-3">
-                <a href="https://www.google.com/maps/place/1046+W+Beech+St,+Long+Beach,+NY+11561/@40.5859068,-73.7006609,17z/data=!3m1!4b1!4m5!3m4!1s0x89c26f82d2869efb:0x34954dcea50df9f5!8m2!3d40.5859068!4d-73.6984722" target="_blank" rel="noopener noreferrer">
-                1046 W Beech St, Long Beach, NY 11561 
+                <a href="https://www.google.com/maps/place/1050+W+Beech+St,+Long+Beach,+NY+11561/@40.5859092,-73.7007764,17z/data=!3m1!4b1!4m5!3m4!1s0x89c26f82cd6cd909:0x324867bc794e1c9b!8m2!3d40.5859092!4d-73.6985877" target="_blank" rel="noopener noreferrer">
+                1050 W Beech St, Long Beach, NY 11561 
                 </a>
               </p>
               <p className="pt-1 text-gray-500 hover:text-neon-pink text-sm">
