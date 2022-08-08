@@ -68,10 +68,10 @@ const navigation = {
                 1046 W Beech St, Long Beach, NY 11561 
                 </a>
               </p>
-              <p className="text-gray-500 hover:text-neon-pink text-sm">
+              <p className="pt-1 text-gray-500 hover:text-neon-pink text-sm">
                 <a href="tel:555-123-456">(555) 123-4567</a>
               </p>
-              <p className="text-gray-500 hover:text-neon-pink text-sm">
+              <p className="pt-1 text-gray-500 hover:text-neon-pink text-sm">
               <a href="mailto:info@theivylbny.com">info@theivylbny.com</a>
               </p>
 
@@ -87,7 +87,7 @@ const navigation = {
             {/* <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2"> */}
               {/* <div className="md:grid md:grid-cols-2 md:gap-8"> */}
 
-              <div className="mt-5 grid grid-cols-1 gap-8 xl:mt-0 col-span-2 pl-5">
+              <div className="mt-5 grid grid-cols-1 gap-8 xl:mt-0 col-span-2 pl-10">
               <div className="grid">
                 <div>
 
