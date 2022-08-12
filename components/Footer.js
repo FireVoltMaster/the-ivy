@@ -72,7 +72,7 @@ const navigation = {
                 <a href="tel:555-123-456">(555) 123-4567</a>
               </p>
               <p className="pt-1 text-gray-500 hover:text-neon-pink text-sm">
-              <a href="mailto:info@theivylbny.com">info@theivylbny.com</a>
+                {/* <a href="mailto:info@theivylbny.com">info@theivylbny.com</a> */}
               </p>
 
               <div className="flex space-x-2 md:space-x-4 lg:space-x-6 pt-2">

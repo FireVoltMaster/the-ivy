@@ -60,7 +60,7 @@ const days = [
     },
     { date: '2022-08-27', isCurrentMonth: true, events: [] },
     { date: '2022-08-28', isCurrentMonth: true, events: [
-        { id: 2, name: 'GRAND OPENING', time: '6PM', datetime: '', href: '/events/event-template' }
+        { id: 2, name: 'GRAND OPENING', time: '6PM', datetime: '', href: '/events/coming-soon' }
     ] },
     { date: '2022-08-29', isCurrentMonth: true, events: [] },
     { date: '2022-08-30', isCurrentMonth: true, events: [] },

@@ -47,7 +47,7 @@ const days = [
     },
     { date: '2022-09-24', isCurrentMonth: true, events: [] },
     { date: '2022-09-25', isCurrentMonth: true, events: [
-        { id: 1, name: "Kai Nova turns 1!", time: '6PM', datetime: '', href: '/events/event-template' }
+        // { id: 1, name: "Kai Nova turns 1!", time: '6PM', datetime: '', href: '' }
     ] },
     { date: '2022-09-26', isCurrentMonth: true, events: [] },
     { date: '2022-09-27', isCurrentMonth: true, events: [] },
