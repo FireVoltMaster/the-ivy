@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Footer from '../../components/Footer'
 
 
-// image still hard coded: line 140
+// image still hard coded: line 142
 
 const eventDeets = [
   {
@@ -51,6 +51,7 @@ const eventDeets = [
 ]
 
 export default function EventTemplate() {
+
   return (
     <div className="bg-white overflow-hidden">
       <Head>
@@ -87,16 +88,16 @@ export default function EventTemplate() {
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
             {eventDeets.map((deet) => (
-              <h2 key={deet.id} className="text-base text-neon-pink font-semibold tracking-wide uppercase">{deet.date}</h2>
-            ))}
-
-            {eventDeets.map((deet) => (
-              <h3 key={deet.id} className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                {deet.title}
-              </h3>
+              <div key={deet.id}>
+                <h2 className="text-base text-neon-pink font-semibold tracking-wide">
+                  {deet.date}
+                </h2>
+                <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl uppercase">
+                  {deet.title}
+                </h3>
+              </div>
             ))}
           </div>
-          
         </div>
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="relative lg:row-start-1 lg:col-start-2">
@@ -125,19 +126,21 @@ export default function EventTemplate() {
             <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
               <figure>
               {/* {eventDeets.map((deet) => (
-                <div key={deet.id} className="lg:aspect-none">
-                    <Image 
-                      src={deet.image}
-                      alt="Flyer"
-                      width={1184}
-                      height={1376}
-                      className="rounded-lg shadow-lg object-cover object-center"
-                    />
+                <div key={deet.image}>
+                  <div className="lg:aspect-none">
+                      <Image 
+                        src={deet.image}
+                        alt="Flyer"
+                        width={1184}
+                        height={1376}
+                        className="rounded-lg shadow-lg object-cover object-center"
+                      />
+                  </div>
                 </div>
                 ))} */}
                 <div className="lg:aspect-none">
                     <Image 
-                      src='/images/events/coming-soon.jpg'
+                      src='/images/events/coming-soon.jpg'    // 👈 HARD CODE IMAGE HERE FOR NOW
                       alt="Flyer"
                       width={1184}
                       height={1376}
@@ -151,27 +154,22 @@ export default function EventTemplate() {
             </div>
           </div>
           <div className="mt-8 lg:mt-0">
-
-            {eventDeets.map((deet) => (
-            <div key={deet.id} className="text-base max-w-prose mx-auto lg:max-w-none">
-              <p className="text-lg text-gray-500">
-                {deet.heading}
-              </p>
-            </div>
-            ))}
-            
             <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
 
-              {eventDeets.map((deet) => (
-                <h3 key={deet.id}>{deet.subheading}</h3>
-              ))}
-
               {eventDeets.map((deet) =>(
-              <div key={deet.id}>
-                <p> 
-                  {deet.description}
-                </p>              
-              </div>
+                <div key={deet.id}>
+                  <div className="text-base max-w-prose mx-auto lg:max-w-none">
+                    <p className="text-lg text-gray-500">
+                      {deet.heading}
+                    </p>
+                  </div>
+                  <h3>
+                    {deet.subheading}
+                  </h3>
+                  <p> 
+                    {deet.description}
+                  </p>
+                </div>
               ))}
 
             </div>
