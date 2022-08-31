@@ -31,7 +31,9 @@ const days = [
       isCurrentMonth: true,
       events: [],
     },
-    { date: '2022-09-14', isCurrentMonth: true, events: [] },
+    { date: '2022-09-14', isCurrentMonth: true, events: [
+      { id: 1, name: "Sip & Paint", time: '7PM', datetime: '', href: '/events/9-14-22' }
+    ] },
     { date: '2022-09-15', isCurrentMonth: true, events: [] },
     { date: '2022-08-16', isCurrentMonth: true, events: [] },
     { date: '2022-09-17', isCurrentMonth: true, events: [] },

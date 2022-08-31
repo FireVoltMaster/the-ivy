@@ -1,6 +1,5 @@
 // import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon, HomeIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 import Image from 'next/image'
 

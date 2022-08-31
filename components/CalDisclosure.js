@@ -26,7 +26,7 @@ export default function CalDisclosure() {
           <dl className="mt-6 space-y-6 divide-y divide-gray-200">
             
               {/* AUGUST */}
-            <Disclosure as="div" className="pt-6">
+            {/* <Disclosure as="div" className="pt-6">
                 {({ open }) => (
                   <>
                     <dt className="text-lg">
@@ -47,7 +47,7 @@ export default function CalDisclosure() {
                     </Disclosure.Panel>
                   </>
                 )}
-            </Disclosure>
+            </Disclosure> */}
 
               {/* SEPTEMBER */}
             <Disclosure as="div" className="pt-6">

@@ -30,6 +30,7 @@ export default function Hero() {
                       alt="The Ivy"
                       blurDataURL="/images/the-ivy-neon.png"
                       placeholder="blur"
+                      priority
                     />
 
                 </div>
