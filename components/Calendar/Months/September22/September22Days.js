@@ -8,7 +8,9 @@ const days = [
     { date: '2022-08-31', events: [] },
     { date: '2022-09-01', isCurrentMonth: true, events: [] },
     { date: '2022-09-02', isCurrentMonth: true, events: [] },
-    { date: '2022-09-03', isCurrentMonth: true, events: [] },
+    { date: '2022-09-03', isCurrentMonth: true, events: [
+      { id: 1, name: "Ribbon Cutting Ceremony", time: '11AM', datetime: '', href: '/events/ribbon-cutting' }
+    ] },
     {
       date: '2022-09-04',
       isCurrentMonth: true,
@@ -32,7 +34,7 @@ const days = [
       events: [],
     },
     { date: '2022-09-14', isCurrentMonth: true, events: [
-      { id: 1, name: "Sip & Paint", time: '7PM', datetime: '', href: '/events/9-14-22' }
+      { id: 2, name: "Sip & Paint", time: '7PM', datetime: '', href: '/events/9-14-22' }
     ] },
     { date: '2022-09-15', isCurrentMonth: true, events: [] },
     { date: '2022-08-16', isCurrentMonth: true, events: [] },
