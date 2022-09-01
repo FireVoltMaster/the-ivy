@@ -8,8 +8,10 @@ import GoogleMapReact from 'google-map-react';
 export default function GoogleMap() {
     const defaultProps = {
         center: {
-          lat: 40.585947,
-          lng: -73.686339
+          // lat: 40.585947,
+          // lng: -73.686339
+          lat: 40.5859092,
+          lng: -73.7007764
         },
         zoom: 14 // higher number is more zoomed in
       }
