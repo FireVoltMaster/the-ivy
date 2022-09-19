@@ -1,5 +1,6 @@
 import React from 'react'
 import { InstagramEmbed } from 'react-social-media-embed'
+// 👆 I think this package is fucking up the entire site... need to find a better instagram tool
 import Image from 'next/image'
   
   export default function ThreeColCard() {
