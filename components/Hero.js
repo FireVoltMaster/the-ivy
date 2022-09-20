@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -36,9 +37,30 @@ export default function Hero() {
                 </div>
                 <div className="py-5 px-1 bg-neon-pink/80 rounded-2xl sm:py-10 sm:px-10 lg:p-10 lg:items-center">
                   <p className="text-white text-xl lg:text-3xl font-thin">
-                    The Ivy on Beech Street, in the heart of Long Beach, NY carries unique clothing and home goods. We also create and curate DIY classes focusing on the handmade and art events to showcase local talent.
+                    The Ivy on Beech Street, in the heart of Long Beach, NY carries unique clothing and home goods. We also create and curate DIY art classes and creative workshops featuring various unique crafts.
                   </p>
                 </div>
+
+                {/* ⚠️ 👇 UNCOMMENT THIS OUT WHEN EVENT LIST PAGE IS READY */}
+
+                {/* <div className="flex flex-col justify-center items-center">
+                  <Link href="/event-list">
+                    <a className="flex flex-row">
+                      <button
+                        type="button"
+                        className="z-50 px-3.5 mt-8 py-2 bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 text-white hover:bg-gradient-to-t from-neon-pink via-neon-pink to-pink-400 hover:text-white font-light rounded-md text-lg flex flex-row items-center"
+                      >  
+                        SEE ALL EVENTS
+                        <div className="pl-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                          <path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                        </svg>
+                        </div>
+                      </button>
+                    </a>
+                  </Link>
+                </div> */}
+
               </div>
             </div>
           </div>
