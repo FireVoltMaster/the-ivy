@@ -58,7 +58,7 @@ export default function SeptFourteenthTwentyTwo() {
           <title>Sip & Paint 9.14.22</title>
           <meta name="description" content="Sip & Paint on 9.14.22 with Liz the Art Wiz at The Ivy in Long Beach, New York." />
           <link rel="icon" href="/favicon.ico" />
-          <meta property="og:image" content='/images/events/9-14-sip-paint.jpg' key="ogimage" />
+          {/* <meta property="og:image" content='/images/events/9-14-sip-paint.jpg' key="ogimage" /> */}
       </Head>
       <div className="flex justify-center pt-3 -mb-36">
         <Image
