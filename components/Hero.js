@@ -41,9 +41,7 @@ export default function Hero() {
                   </p>
                 </div>
 
-                {/* ⚠️ 👇 UNCOMMENT THIS OUT WHEN EVENT LIST PAGE IS READY */}
-
-                {/* <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col justify-center items-center">
                   <Link href="/event-list">
                     <a className="flex flex-row">
                       <button
@@ -59,7 +57,7 @@ export default function Hero() {
                       </button>
                     </a>
                   </Link>
-                </div> */}
+                </div>
 
               </div>
             </div>

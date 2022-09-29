@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 import AugustCalendar from './Calendar/Months/August22/August22Calendar'
 import SeptemberCalendar from './Calendar/Months/September22/September22Calendar'
+import OctobrrCalendar from './Calendar/Months/October22/October22Calendar'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -67,6 +68,30 @@ export default function CalDisclosure() {
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
 
                         <SeptemberCalendar />
+
+                    </Disclosure.Panel>
+                  </>
+                )}
+            </Disclosure>
+
+                          {/* OCTOBER */}
+                          <Disclosure as="div" className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt className="text-lg">
+                      <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
+                        <span className="font-base text-gray-900">October</span>
+                        <span className="ml-6 h-7 flex items-center">
+                          <ChevronDownIcon
+                            className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
+                            aria-hidden="true"
+                          />
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+
+                        <OctobrrCalendar />
 
                     </Disclosure.Panel>
                   </>

@@ -6,19 +6,20 @@ import Footer from '../components/Footer'
 
 const events = [
     {
-        date: 'September 25, 2022',
-        title: "Kai's First Birthday",
-        description: "its a party",
-        time: '2pm',
-        tickets: 'https://ezevent.com'
+        date: 'October 6, 2022',
+        title: "Sip & Paint",
+        description: "Nightmare Before Christmas themed!",
+        time: '7pm',
+        tickets: 'https://paintnight.ezevent.com',
+        eventPage: '/events/10-6-22'
     },
-    {
-        date: 'September 28, 2022',
-        title: "Cousin's Birthday",
-        description: "its another party",
-        time: '8pm',
-        tickets: 'https://ezevent.com'
-    },
+    // {
+    //     date: 'September 28, 2022',
+    //     title: "Cousin's Birthday",
+    //     description: "its another party",
+    //     time: '8pm',
+    //     tickets: 'https://ezevent.com'
+    // },
 ]
 
 export default function EventList() {
@@ -103,7 +104,15 @@ export default function EventList() {
                             {event.date} @ {event.time}
                         </h3>
                         <h3>{event.title}</h3>
-                        <p>{event.description}</p>
+                        <p>
+                          {event.description}  
+                          <Link href={event.eventPage}>
+                            <a className="pl-2">
+                              read more
+                            </a>
+                          </Link>
+                        </p>
+
                     </div>
 
                     <div className="flex flex-row">
