@@ -2,9 +2,11 @@ import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 
+// MONTHS
 import AugustCalendar from './Calendar/Months/August22/August22Calendar'
 import SeptemberCalendar from './Calendar/Months/September22/September22Calendar'
 import OctobrrCalendar from './Calendar/Months/October22/October22Calendar'
+import NovemberCalendar from './Calendar/Months/November22/November22Calendar'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -26,30 +28,6 @@ export default function CalDisclosure() {
             </div>
           <dl className="mt-6 space-y-6 divide-y divide-gray-200">
             
-              {/* AUGUST */}
-            {/* <Disclosure as="div" className="pt-6">
-                {({ open }) => (
-                  <>
-                    <dt className="text-lg">
-                      <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                        <span className="font-base text-gray-900">August</span>
-                        <span className="ml-6 h-7 flex items-center">
-                          <ChevronDownIcon
-                            className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
-                            aria-hidden="true"
-                          />
-                        </span>
-                      </Disclosure.Button>
-                    </dt>
-                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
-
-                        <AugustCalendar />
-
-                    </Disclosure.Panel>
-                  </>
-                )}
-            </Disclosure> */}
-
               {/* SEPTEMBER */}
             <Disclosure as="div" className="pt-6">
                 {({ open }) => (
@@ -74,8 +52,8 @@ export default function CalDisclosure() {
                 )}
             </Disclosure>
 
-                          {/* OCTOBER */}
-                          <Disclosure as="div" className="pt-6">
+            {/* OCTOBER */}
+            <Disclosure as="div" className="pt-6">
                 {({ open }) => (
                   <>
                     <dt className="text-lg">
@@ -97,6 +75,30 @@ export default function CalDisclosure() {
                   </>
                 )}
             </Disclosure>
+
+            {/* NOVEMBER */}
+            {/* <Disclosure as="div" className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt className="text-lg">
+                      <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
+                        <span className="font-base text-gray-900">November</span>
+                        <span className="ml-6 h-7 flex items-center">
+                          <ChevronDownIcon
+                            className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
+                            aria-hidden="true"
+                          />
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
+
+                        <NovemberCalendar />
+
+                    </Disclosure.Panel>
+                  </>
+                )}
+            </Disclosure> */}
             
           </dl>
         </div>
