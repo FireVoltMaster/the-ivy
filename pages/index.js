@@ -16,8 +16,14 @@ import Contact from '../components/Contact'
 export default function Home() {
   return (
     <div>
-      <Script data-ad-client={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE} async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script>
+      {/* <Script data-ad-client={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE} async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script> */}
+      <Script
+        strategy='lazyOnload' 
+        data-ad-client={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE} 
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      />
       <Head>
         <title>The Ivy</title>
         <meta name="description" content="The Ivy is a premier art / event space and retail experience in Long Beach, New York." />
