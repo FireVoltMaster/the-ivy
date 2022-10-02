@@ -20,6 +20,12 @@ function MyApp({ Component, pageProps }) {
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');`
         }
       </Script>
+      <Script
+        strategy='lazyOnload' 
+        data-ad-client={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE} 
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      />
 
       <Component {...pageProps} />
     </>
