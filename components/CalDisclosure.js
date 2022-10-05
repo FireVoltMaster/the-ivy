@@ -37,7 +37,7 @@ export default function CalDisclosure() {
                         <span className="font-base text-gray-900">September</span>
                         <span className="ml-6 h-7 flex items-center">
                           <ChevronDownIcon
-                            className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
+                            className={classNames(open ? 'transition duration-300 ease-in-out transform -rotate-180' : 'rotate-0', 'transition duration-300 ease-in-out h-6 w-6 transform')}
                             aria-hidden="true"
                           />
                         </span>
@@ -61,7 +61,7 @@ export default function CalDisclosure() {
                         <span className="font-base text-gray-900">October</span>
                         <span className="ml-6 h-7 flex items-center">
                           <ChevronDownIcon
-                            className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
+                            className={classNames(open ? 'transition duration-300 ease-in-out transform -rotate-180' : 'rotate-0', 'transition duration-300 ease-in-out h-6 w-6 transform')}
                             aria-hidden="true"
                           />
                         </span>
@@ -85,7 +85,7 @@ export default function CalDisclosure() {
                         <span className="font-base text-gray-900">November</span>
                         <span className="ml-6 h-7 flex items-center">
                           <ChevronDownIcon
-                            className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
+                            className={classNames(open ? 'transition duration-300 ease-in-out transform -rotate-180' : 'rotate-0', 'transition duration-300 ease-in-out h-6 w-6 transform')}
                             aria-hidden="true"
                           />
                         </span>
