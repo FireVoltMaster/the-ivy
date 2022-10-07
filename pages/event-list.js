@@ -13,13 +13,14 @@ const events = [
         tickets: 'https://paintnight.ezevent.com',
         eventPage: '/events/10-6-22'
     },
-    // {
-    //     date: 'September 28, 2022',
-    //     title: "Cousin's Birthday",
-    //     description: "its another party",
-    //     time: '8pm',
-    //     tickets: 'https://ezevent.com'
-    // },
+    {
+        date: 'October 12, 2022',
+        title: "Sip & Paint",
+        description: "Hocus Pocus Themed",
+        time: '7pm',
+        tickets: 'https://hocuspocuspainting.ezevent.com',
+        eventPage: '/events/10-12-22'
+    },
 ]
 
 export default function EventList() {
