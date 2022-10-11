@@ -98,7 +98,7 @@ const navigation = {
             </div>
           </div>
           <div className="mt-12 border-t border-gray-200 pt-8">
-            <p className="text-sm text-gray-400 xl:text-center">&copy; 2022 The Ivy, All rights reserved.</p>
+            <p className="text-sm text-gray-400 xl:text-center">&copy; {new Date().getFullYear()} The Ivy, All rights reserved.</p>
             <p className="xl:text-center lg:text-left text-xs text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-cyan-400">Made with <span className="text-red-600">❤️</span> in NYC by <a href="mailto:info@whiterabbitdesign.studio">White Rabbit Design</a></p>
           </div>
         </div>
