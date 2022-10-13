@@ -28,25 +28,25 @@ import Image from 'next/image'
 
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <InstagramEmbed 
-                    url="https://www.instagram.com/p/CfwrhntJQ8k/?igshid=YmMyMTA2M2Y=" 
+                    url="https://www.instagram.com/p/CiijS4KvvHu/?igshid=N2NmMDY0OWE%3D" 
                     width={328} 
-                    height={450}
+                    height={520}
                 />
             </div>
 
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <InstagramEmbed 
-                    url="https://www.instagram.com/reel/CgzRr1gvp6t/?igshid=YmMyMTA2M2Y=" 
+                    url="https://www.instagram.com/reel/CibRdALjCiT/?igshid=N2NmMDY0OWE%3D" 
                     width={328}
-                    height={450} 
+                    height={540} 
                 />
             </div>
 
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <InstagramEmbed 
-                    url="https://www.instagram.com/p/CgANIv-OuKC/?igshid=YmMyMTA2M2Y=" 
+                    url="https://www.instagram.com/reel/CjqlEtapKg1/?igshid=N2NmMDY0OWE%3D" 
                     width={328} 
-                    height={455} 
+                    height={540} 
                 />
             </div>
 

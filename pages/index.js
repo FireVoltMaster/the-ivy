@@ -40,10 +40,10 @@ export default function Home() {
 
         <CalDisclosure />
 
-        <Subscribe />
-        
         <ThreeColCard />
 
+        <Subscribe />
+        
         {/* <Contact /> */}
         
       </main>

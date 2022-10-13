@@ -68,9 +68,9 @@ const navigation = {
                 1050 W Beech St, Long Beach, NY 11561 
                 </a>
               </p>
-              {/* <p className="pt-1 text-gray-500 hover:text-neon-pink text-sm">
-                <a href="tel:555-123-456">(555) 123-4567</a>
-              </p> */}
+              <p className="pt-1 text-gray-500 hover:text-neon-pink text-sm">
+                <a href="tel:516-882-4542">(516) 882-4542</a>
+              </p>
               <p className="pt-1 text-gray-500 hover:text-neon-pink text-sm">
                 {/* <a href="mailto:info@theivylbny.com">info@theivylbny.com</a> */}
               </p>
