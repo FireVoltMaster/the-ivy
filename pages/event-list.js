@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
+import SecondaryNav from '../components/SecondaryNav'
 import Footer from '../components/Footer'
 
 const events = [
@@ -31,7 +32,7 @@ export default function EventList() {
           <meta name="description" content="Events happening at The Ivy in Long Beach, New York." />
           <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex justify-center pt-3 -mb-36">
+      {/* <div className="flex justify-center pt-3 -mb-36">
         <Image
           src="/images/the-ivy.png"
           alt="the ivy"
@@ -53,9 +54,9 @@ export default function EventList() {
             </button>
           </a>
         </Link>
-      </div>
-
-      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      </div> */}
+      <SecondaryNav />
+      <div className="relative max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
         <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
