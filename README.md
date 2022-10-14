@@ -1,7 +1,9 @@
 # the-ivy 🌿
 
 ### ℹ️ `About:` 
-A marketing / E-Commerce website for The Ivy in Long Beach, NY.  
+A marketing and e-commerce website for The Ivy in Long Beach, NY.  
+
+This project is built with `Next.js`, styled with `Tailwind CSS` and features SEO, accessibility and image optimization, Google Analytics, serverless API integration, custom built React components and a fully responsive design. The main branch of this git repository deploys to production continuously to Vercel via the main branch of this Git repository.
 
 View live: [theivylbny.com](https://www.theivylbny.com)
 
@@ -21,7 +23,7 @@ View live: [theivylbny.com](https://www.theivylbny.com)
 $ # install dependencies
 $ npm i
 $ # start local development node.js server
-$ npm run develop
+$ npm run dev
 $ # or
 $ yarn develop
 ```
