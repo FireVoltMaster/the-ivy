@@ -5,7 +5,7 @@ A marketing and e-commerce website for The Ivy in Long Beach, NY.
 
 This project is built with `Next.js`, styled with `Tailwind CSS` and features SEO, accessibility and image optimization, Google Analytics, serverless API integration, custom built React components, a fully responsive design and deploys to production continuously to Vercel via the main branch of this Git repository.  
 
-The e-commerce portion of the website ([github.com/Adamhunter108/the-ivy-hydrogen-vercel](https://github.com/Adamhunter108/the-ivy-hydrogen-vercel)) is a custom Shopify storefront built using the React framework, Hydrogen.  
+The e-commerce portion of the website ([github.com/Adamhunter108/the-ivy-hydrogen-vercel](https://github.com/Adamhunter108/the-ivy-hydrogen-vercel)) is a custom headless Shopify storefront built using the React framework, Hydrogen which is seamlessly integrated through a subdomain.  
 
 View live: [theivylbny.com](https://www.theivylbny.com)
 
