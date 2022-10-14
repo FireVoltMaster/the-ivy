@@ -63,11 +63,14 @@ export default function SecondaryNav() {
                       </a>
                     </Link>
 
-                    <Link href="/shop">
+                    {/* <Link href="/shop">
                       <a className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                         Shop
                       </a>
-                    </Link>
+                    </Link> */}
+                    <a href="https://shop.theivylbny.com/" className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                        Shop
+                    </a>
 
                   </div>
                 </div>
