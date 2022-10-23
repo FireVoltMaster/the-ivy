@@ -30,29 +30,38 @@ export default function Subscribe() {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        let isValidForm = handleValidation()
+        // let isValidForm = handleValidation()
 
-        if (isValidForm) {
+        // if (isValidForm) {
 
-            const res = await axios.post('api/subscribe', {
-                email: inputEl.current.value
-            })
-            .then(function(res) {
-                console.log('Success!')
-                setShowSuccessMessage(true)
-                setShowFailureMessage(false)
-            })
-            .catch(function(error){
-                console.log('🚨 API error')
-                // setMessage(error)
-                setShowSuccessMessage(false)
-                setShowFailureMessage(true)
-            })
-        
-            // clear the input value and show a success message
-            // inputEl.current.value = ''
-            // setMessage('Success! 🎉 You are now subscribed to the newsletter.')
+        //     const res = await axios.post('api/subscribe', {
+        //         email: inputEl.current.value
+        //     })
+        //     .then(function(res) {
+        //         console.log('Success!')
+        //         setShowSuccessMessage(true)
+        //         setShowFailureMessage(false)
+        //     })
+        //     .catch(function(error){
+        //         console.log('🚨 API error')
+        //         // setMessage(error)
+        //         setShowSuccessMessage(false)
+        //         setShowFailureMessage(true)
+        //     })
+        // }
 
+        try {
+          const response = await axios.post('/api/subscribe', { email: inputEl.current.value })
+          // console.log(response)
+          console.log('Success!')
+          setShowSuccessMessage(true)
+          setShowFailureMessage(false)
+        } catch (e) {
+          // console.log(e.response.data.error)
+          console.log('🚨 API error')
+          // setMessage(error)
+          setShowSuccessMessage(false)
+          setShowFailureMessage(true)
         }
       }
 
@@ -100,7 +109,7 @@ export default function Subscribe() {
                   Email address
                 </label>
                 <input
-                  // id="email"
+                  id="email-input"
                   name="email"
                   type="email"
                   ref={inputEl} 
