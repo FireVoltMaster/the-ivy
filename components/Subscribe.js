@@ -100,7 +100,7 @@ export default function Subscribe() {
                   Email address
                 </label>
                 <input
-                  id="email"
+                  // id="email"
                   name="email"
                   type="email"
                   ref={inputEl} 
@@ -121,7 +121,7 @@ export default function Subscribe() {
               </p>
             </div>
           </div>
-          <div className="text-sm text-center mx-auto pt-2">
+          <div className="text-sm text-center mx-auto -mt-10">
                 {showSuccessMessage && (
                     <p className="text-indigo-100 font-semibold text-sm my-2">
                         Thanks for signing up!
