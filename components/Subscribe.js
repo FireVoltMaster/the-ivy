@@ -133,7 +133,7 @@ export default function Subscribe() {
           <div className="text-sm text-center mx-auto -mt-10">
                 {showSuccessMessage && (
                     <p className="text-indigo-100 font-semibold text-sm my-2">
-                        Thanks for signing up!
+                        Thanks for signing up for the Ivy newsletter!
                     </p>
                 )}
                 {showFailureMessage && (
