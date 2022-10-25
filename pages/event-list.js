@@ -5,24 +5,8 @@ import Link from 'next/link'
 import SecondaryNav from '../components/SecondaryNav'
 import Footer from '../components/Footer'
 
-const events = [
-    {
-        date: 'October 6, 2022',
-        title: "Sip & Paint",
-        description: "Nightmare Before Christmas themed!",
-        time: '7pm',
-        tickets: 'https://paintnight.ezevent.com',
-        eventPage: '/events/10-6-22'
-    },
-    {
-        date: 'October 12, 2022',
-        title: "Sip & Paint",
-        description: "Hocus Pocus Themed",
-        time: '7pm',
-        tickets: 'https://hocuspocuspainting.ezevent.com',
-        eventPage: '/events/10-12-22'
-    },
-]
+import { events } from '../data/events'
+
 
 export default function EventList() {
   return (
@@ -61,7 +45,7 @@ export default function EventList() {
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
                 <h2 className="text-3xl text-neon-pink font-semibold tracking-wide">
-                  Events happening at The Ivy
+                  Upcoming events happening at The Ivy
                 </h2>
                 {/* <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl uppercase">
                   details
@@ -103,21 +87,24 @@ export default function EventList() {
 
                     <div className="text-base">
                         <h3>
-                            {event.date} @ {event.time}
+                            {/* {event.date} @ {event.time} */}
+                            {event.date}  {event.time}
                         </h3>
                         <h3>{event.title}</h3>
                         <p>
                           {event.description}  
-                          <Link href={event.eventPage}>
+                            {/* READ MORE LINK TO EVENT PAGE */}
+                          {/* <Link href={event.eventPage}>
                             <a className="pl-2">
                               read more
                             </a>
-                          </Link>
+                          </Link> */}
                         </p>
 
                     </div>
 
-                    <div className="flex flex-row">
+                            {/* TICKETS */}
+                    {/* <div className="flex flex-row">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
                         </svg>
@@ -125,7 +112,7 @@ export default function EventList() {
                         <div className="cursor-pointer pl-2">
                             <a href={event.tickets} target="_blank" rel="noreferrer" className='text-xl text-neon-pink hover:text-green-400'>Tickets</a>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             ))}

@@ -1,4 +1,6 @@
-import days from "./November22Days";
+// import days from "./November22Days";
+import days from "../../../../data/November22Days"
+
 
 
 function classNames(...classes) {
@@ -67,7 +69,7 @@ function classNames(...classes) {
                     <ol className="mt-2">
                       {day.events.slice(0, 2).map((event) => (
                         <li key={event.id}>
-                          <a href={event.href} className="group flex">
+                          {/* <a href={event.href} className="group flex"> */}
                             <p className="flex-auto truncate font-medium text-gray-900 group-hover:text-neon-pink hover:scale-125">
                               {event.name}
                             </p>
@@ -77,7 +79,7 @@ function classNames(...classes) {
                             >
                               {event.time}
                             </time>
-                          </a>
+                          {/* </a> */}
                         </li>
                       ))}
                       {day.events.length > 2 && <li className="text-gray-500">+ {day.events.length - 2} more</li>}
@@ -111,7 +113,7 @@ function classNames(...classes) {
                       <ol className="mt-2">
                           {day.events.slice(0, 2).map((event) => (
                           <li key={event.id}>
-                              <a href={event.href} className="group flex">
+                              {/* <a href={event.href} className="group flex"> */}
                               <p className="flex-auto truncate font-medium text-gray-900 group-hover:text-neon-pink">
                                   {/* {event.name} */}
                                   <svg className="w-3 h-3 pb-1" aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -124,7 +126,7 @@ function classNames(...classes) {
                               >
                                   {event.time}
                               </time>
-                              </a>
+                              {/* </a> */}
                           </li>
                           ))}
                           {day.events.length > 2 && <li className="text-gray-500">+ {day.events.length - 2} more</li>}
