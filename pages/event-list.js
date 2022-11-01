@@ -47,10 +47,6 @@ export default function EventList() {
                 <h2 className="text-3xl text-neon-pink font-semibold tracking-wide">
                   Upcoming events happening at The Ivy
                 </h2>
-                {/* <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl uppercase">
-                  details
-                </h3> */}
-
                 <Link href="https://novembereventcalendar.ezevent.com">
                   <a className="flex flex-row" target="_blank">
                     <button
