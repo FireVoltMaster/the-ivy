@@ -1,12 +1,12 @@
-// JANUARY 2023
+// FEBRUARY 2023
+
+// TO DO: change over to feb 
 
 const days = [
-    { date: '2023-01-01', isCurrentMonth: true, events: [
-        { id: 1, name: "New Year's Day", time: '', datetime: '', href: '' }
-    ] },
-    { date: '2023-01-02', isCurrentMonth: true, events: [] },
-    { date: '2023-01-03', isCurrentMonth: true, events: [] },
-    { date: '2023-01-04', isCurrentMonth: true, events: [] },
+    { date: '2023-01-01', events: [] },
+    { date: '2023-01-02', events: [] },
+    { date: '2023-01-03', events: [] },
+    { date: '2023-01-04', events: [] },
     { date: '2023-01-05', isCurrentMonth: true, events: [] },
     { date: '2023-01-06', isCurrentMonth: true, events: [] },
     { date: '2023-01-07', isCurrentMonth: true, events: [] },
@@ -34,10 +34,10 @@ const days = [
     { date: '2023-01-29', isCurrentMonth: true, events: [] },
     { date: '2023-01-30', isCurrentMonth: true, events: [] },
     { date: '2023-01-31', isCurrentMonth: true, events: [] },
-    { date: '2023-02-01', events: [] },
-    { date: '2023-02-02', events: [] },
-    { date: '2023-02-03', events: [] },
-    { date: '2023-02-04', events: [] },
+    { date: '2023-02-01', isCurrentMonth: true, events: [] },
+    { date: '2023-02-02', isCurrentMonth: true, events: [] },
+    { date: '2023-02-03', isCurrentMonth: true, events: [] },
+    { date: '2023-02-04', isCurrentMonth: true, events: [] },
     { date: '2023-02-05', events: [] },
     { date: '2023-02-06', events: [] },
     { date: '2023-02-07', events: [] },
