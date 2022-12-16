@@ -47,7 +47,15 @@ export default function EventList() {
                 <h2 className="text-3xl text-neon-pink font-semibold tracking-wide">
                   Upcoming events happening at The Ivy
                 </h2>
-                <Link href="https://novembereventcalendar.ezevent.com">
+
+                {/* 
+                //////////////////////////////////////////////////////////////////// 
+                  CLIENT WANTED A SINGLE TOP BUTTON TO MONTHLY TICKET PAGE
+                ///////////////////////////////////////////////////////////////////// 
+                  NOW SHES GOING BACK TO INDIVIDUAL PAGES, BUTTON IS HERE IF WE NEED
+                //////////////////////////////////////////////////////////////////////
+                */}
+                {/* <Link href="https://novembereventcalendar.ezevent.com">
                   <a className="flex flex-row" target="_blank">
                     <button
                         type="button"
@@ -61,7 +69,7 @@ export default function EventList() {
                         </div>
                     </button>
                   </a>
-                </Link>
+                </Link> */}
           </div>
         </div>
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -99,24 +107,24 @@ export default function EventList() {
 
                     <div className="text-base">
                         <h3>
-                            {/* {event.date} @ {event.time} */}
-                            {event.date}  {event.time}
+                            {event.date} @ {event.time}
+                            {/* {event.date}  {event.time} */}
                         </h3>
                         <h3>{event.title}</h3>
                         <p>
                           {event.description}  
                             {/* READ MORE LINK TO EVENT PAGE */}
-                          {/* <Link href={event.eventPage}>
+                          <Link href={event.eventPage}>
                             <a className="pl-2">
                               read more
                             </a>
-                          </Link> */}
+                          </Link>
                         </p>
 
                     </div>
 
                             {/* TICKETS */}
-                    {/* <div className="flex flex-row">
+                    <div className="flex flex-row">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
                         </svg>
@@ -124,7 +132,7 @@ export default function EventList() {
                         <div className="cursor-pointer pl-2">
                             <a href={event.tickets} target="_blank" rel="noreferrer" className='text-xl text-neon-pink hover:text-green-400'>Tickets</a>
                         </div>
-                    </div> */}
+                    </div>
 
                 </div>
             ))}

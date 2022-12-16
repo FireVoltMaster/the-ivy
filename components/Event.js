@@ -22,7 +22,7 @@ export default function Event(props) {
           />
         </div>
         <div className="pl-5">
-          <Link href="/#calendar">
+          <Link href="/event-list">
             <a className="flex flex-row">
               <button
                   type="button"

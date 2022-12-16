@@ -29,53 +29,6 @@ export default function CalDisclosure() {
             </div>
           <dl className="mt-6 space-y-6 divide-y divide-gray-200">
             
-              {/* SEPTEMBER */}
-            {/* <Disclosure as="div" className="pt-6">
-                {({ open }) => (
-                  <>
-                    <dt className="text-lg">
-                      <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                        <span className="font-base text-gray-900">September</span>
-                        <span className="ml-6 h-7 flex items-center">
-                          <ChevronDownIcon
-                            className={classNames(open ? 'transition duration-300 ease-in-out transform -rotate-180' : 'rotate-0', 'transition duration-300 ease-in-out h-6 w-6 transform')}
-                            aria-hidden="true"
-                          />
-                        </span>
-                      </Disclosure.Button>
-                    </dt>
-                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
-
-                        <SeptemberCalendar />
-
-                    </Disclosure.Panel>
-                  </>
-                )}
-            </Disclosure> */}
-
-            {/* OCTOBER */}
-            <Disclosure as="div" className="pt-6">
-                {({ open }) => (
-                  <>
-                    <dt className="text-lg">
-                      <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                        <span className="font-base text-gray-900">October 🎃</span>
-                        <span className="ml-6 h-7 flex items-center">
-                          <ChevronDownIcon
-                            className={classNames(open ? 'transition duration-300 ease-in-out transform -rotate-180' : 'rotate-0', 'transition duration-300 ease-in-out h-6 w-6 transform')}
-                            aria-hidden="true"
-                          />
-                        </span>
-                      </Disclosure.Button>
-                    </dt>
-                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
-
-                        <OctobrrCalendar />
-
-                    </Disclosure.Panel>
-                  </>
-                )}
-            </Disclosure>
 
             {/* NOVEMBER */}
             <Disclosure as="div" className="pt-6">

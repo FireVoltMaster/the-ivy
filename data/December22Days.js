@@ -24,17 +24,19 @@ const days = [
     { date: '2022-12-17', isCurrentMonth: true, events: [] },
     { date: '2022-12-18', isCurrentMonth: true, events: [] },
     { date: '2022-12-19', isCurrentMonth: true, events: [
-      { id: 3, name: "Hanukkah", time: '', datetime: '', href: '' }
+      { id: 1, name: "Hanukkah", time: '', datetime: '', href: '' }
     ] },
     { date: '2022-12-20', isCurrentMonth: true, events: [] },
-    { date: '2022-12-21', isCurrentMonth: true, events: [] },
+    { date: '2022-12-21', isCurrentMonth: true, events: [
+      { id: 2, name: "SIP & Paint", time: '7PM', datetime: '', href: '' }
+    ] },
     { date: '2022-12-22', isCurrentMonth: true, events: [] },
     { date: '2022-12-23', isCurrentMonth: true, events: [] },
     { date: '2022-12-24', isCurrentMonth: true, events: [
-      { id: 1, name: "Christmas Eve", time: '', datetime: '', href: '' }
+      { id: 3, name: "Christmas Eve", time: '', datetime: '', href: '' }
     ] },
     { date: '2022-12-25', isCurrentMonth: true, events: [
-      { id: 2, name: "Christmas", time: '', datetime: '', href: '' }
+      { id: 4, name: "Christmas", time: '', datetime: '', href: '' }
     ] },
     { date: '2022-12-26', isCurrentMonth: true, events: [] },
     { date: '2022-12-27', isCurrentMonth: true, events: [] },
@@ -42,10 +44,10 @@ const days = [
     { date: '2022-12-29', isCurrentMonth: true, events: [] },
     { date: '2022-12-30', isCurrentMonth: true, events: [] },
     { date: '2022-12-31', isCurrentMonth: true, events: [
-      { id: 4, name: "New Year's Eve", time: '', datetime: '', href: '' }
+      { id: 5, name: "New Year's Eve", time: '', datetime: '', href: '' }
     ] },
     { date: '2022-01-01', events: [
-      { id: 5, name: "New Year's Day", time: '', datetime: '', href: '' }
+      { id: 6, name: "New Year's Day", time: '', datetime: '', href: '' }
     ] },
     { date: '2022-01-02', events: [] },
     { date: '2022-12-03', events: [] },
