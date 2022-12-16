@@ -33,6 +33,7 @@ import Image from 'next/image'
                     alt="Macrame"
                     blurDataURL="/images/macrame.jpg"
                     placeholder="blur"
+                    loading="lazy"
                 />
             </div>
 
@@ -45,6 +46,7 @@ import Image from 'next/image'
                     alt="Tie Dye"
                     blurDataURL="/images/tie-dye.jpg"
                     placeholder="blur"
+                    loading="lazy"
                 />
             </div>
 
@@ -57,6 +59,7 @@ import Image from 'next/image'
                     alt="Candle Making"
                     blurDataURL="/images/candle-making.jpg"
                     placeholder="blur"
+                    loading="lazy"
                 />
             </div>
 
