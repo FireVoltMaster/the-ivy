@@ -11,6 +11,7 @@ import ThreeColCard from '../components/ThreeColCard'
 import CalDisclosure from '../components/CalDisclosure'
 import ClassImages from '../components/ClassImages'
 import Contact from '../components/Contact'
+import Map from '../components/LeafletMap/'
 
 
 export default function Home() {
@@ -48,6 +49,7 @@ export default function Home() {
         
       </main>
 
+      {/* <Map /> */}
       <Footer />
 
     </div>
