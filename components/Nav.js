@@ -29,7 +29,7 @@ export default function Nav() {
                 <div className="flex-shrink-0">
 
                     {/* MOBILE */}
-                  <div className="block lg:hidden h-8 w-auto pr-3">
+                  <div className="block lg:hidden h-8 w-auto pr-1">
                     <Image
                       // className="block lg:hidden h-8 w-auto"
                       // src="/images/the-ivy.png"
