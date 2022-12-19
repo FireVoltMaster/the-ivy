@@ -57,7 +57,7 @@ export default function Nav() {
                 {/* <div className="hidden sm:block sm:ml-6"> */}
                 <div className="block sm:ml-6">
                   {/* <div className="pl-28 lg:pl-96 flex space-x-5"> */}
-                  <div className="pl-26 lg:pl-5 flex space-x-5">
+                  <div className="pl-26 lg:pl-5 flex space-x-3">
 
                     <Link href="/">
                       <a 
