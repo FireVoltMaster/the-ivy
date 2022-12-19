@@ -2,11 +2,23 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import Link from 'next/link'
 import Image from 'next/image'
+import useScrollPosition from '../hooks/useScrollPosition'
 
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
 
 export default function Nav() {
+  const scrollPosition = useScrollPosition()
+
   return (
-    <Disclosure as="nav" className="fixed bg-white/70 backdrop-blur-2xl w-screen z-40">
+    // <Disclosure as="nav" className="fixed bg-white/70 backdrop-blur-2xl w-screen z-40">
+    <Disclosure as="nav" 
+      className={classNames(scrollPosition > 0 ?
+      "bg-white/70 backdrop-blur-2xl" : "bg-black/0",
+      "fixed w-screen z-40 transition-colors ease-in-out duration-500"
+    )}>
       {({ open }) => (
         <div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,10 +29,11 @@ export default function Nav() {
                 <div className="flex-shrink-0">
 
                     {/* MOBILE */}
-                  <div className="block lg:hidden h-8 w-auto">
+                  <div className="block lg:hidden h-8 w-auto pr-3">
                     <Image
                       // className="block lg:hidden h-8 w-auto"
-                      src="/images/the-ivy.png"
+                      // src="/images/the-ivy.png"
+                      src={classNames(scrollPosition > 0 ? "/images/the-ivy.png" : "/images/the-ivy-neon.png")}
                       alt="the ivy"
                       width={110}
                       height={65}
@@ -28,10 +41,11 @@ export default function Nav() {
                   </div>
 
                     {/* LARGE SCREEN */}
-                  <div className="hidden lg:block h-32 w-auto pt-10">
+                  <div className="hidden lg:block h-32 w-auto pt-10 pr-5">
                     <Image
                       // className="hidden lg:block h-32 w-auto"
-                      src="/images/the-ivy.png"
+                      // src="/images/the-ivy.png"
+                      src={classNames(scrollPosition > 0 ? "/images/the-ivy.png" : "/images/the-ivy-neon.png")}
                       alt="the ivy"
                       width={120}
                       height={75}
@@ -46,19 +60,21 @@ export default function Nav() {
                   <div className="pl-26 lg:pl-5 flex space-x-5">
 
                     <Link href="/">
-                      <a className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                      <a 
+                        // className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                        className={classNames(scrollPosition > 0 ? "text-neon-pink" : "text-white bg-neon-pink/80", "hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium")}
+
+                      >
                         Home
                       </a>
                     </Link>
 
-                    {/* <Link href="/projects">
-                      <a className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-                        About
-                      </a>
-                    </Link> */}
-
                     <Link href="#calendar">
-                      <a className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                      <a 
+                        // className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                        className={classNames(scrollPosition > 0 ? "text-neon-pink" : "text-white bg-neon-pink/80", "hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium")}
+
+                      >
                         Calendar
                       </a>
                     </Link>
@@ -71,7 +87,11 @@ export default function Nav() {
                       {/* <a href="https://the-ivy-hydrogen-vercel.vercel.app/" className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                         Shop
                       </a> */}
-                    <a href="https://shop.theivylbny.com/" className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+                    <a 
+                      href="https://shop.theivylbny.com/" 
+                      // className="text-neon-pink hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                      className={classNames(scrollPosition > 0 ? "text-neon-pink" : "text-white bg-neon-pink/80", "hover:bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 hover:text-white block px-3 py-2 rounded-md text-base font-medium")}
+                    >
                       Shop
                     </a>
 
