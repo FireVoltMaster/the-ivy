@@ -31,7 +31,7 @@ export default function CalDisclosure() {
             
 
             {/* NOVEMBER */}
-            <Disclosure as="div" className="pt-6">
+            {/* <Disclosure as="div" className="pt-6">
                 {({ open }) => (
                   <>
                     <dt className="text-lg">
@@ -52,10 +52,10 @@ export default function CalDisclosure() {
                     </Disclosure.Panel>
                   </>
                 )}
-            </Disclosure>
+            </Disclosure> */}
 
             {/* DECEMBER */}
-            <Disclosure as="div" className="pt-6">
+            {/* <Disclosure as="div" className="pt-6">
                 {({ open }) => (
                   <>
                     <dt className="text-lg">
@@ -72,6 +72,31 @@ export default function CalDisclosure() {
                     <Disclosure.Panel as="dd" className="mt-2 pr-12">
 
                         <DecemberCalendar />
+
+                    </Disclosure.Panel>
+                  </>
+                )}
+            </Disclosure> */}
+
+            <Disclosure as="div" className="pt-6">
+                {({ open }) => (
+                  <>
+                    <dt className="text-lg">
+                      <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
+                        <span className="font-base text-3xl text-gray-900">👀 </span>
+                        <span className="ml-6 h-7 flex items-center">
+                          <ChevronDownIcon
+                            className={classNames(open ? 'transition duration-300 ease-in-out transform -rotate-180' : 'rotate-0', 'transition duration-300 ease-in-out h-6 w-6 transform')}
+                            aria-hidden="true"
+                          />
+                        </span>
+                      </Disclosure.Button>
+                    </dt>
+                    {/* <Disclosure.Panel as="dd" className="mt-2 pr-12"> */}
+                    <Disclosure.Panel as="dd" className="mt-2">
+
+
+                        <p className='text-center text-5xl lg:text-7xl font-hurricane'>More events coming soon!</p>
 
                     </Disclosure.Panel>
                   </>
