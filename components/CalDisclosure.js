@@ -95,8 +95,7 @@ export default function CalDisclosure() {
                     {/* <Disclosure.Panel as="dd" className="mt-2 pr-12"> */}
                     <Disclosure.Panel as="dd" className="mt-2">
 
-
-                        <p className='text-center text-5xl lg:text-7xl font-hurricane'>More events coming soon!</p>
+                        <p className='text-center text-5xl lg:text-7xl font-hurricane animate-bounce'>More events coming soon!</p>
 
                     </Disclosure.Panel>
                   </>
