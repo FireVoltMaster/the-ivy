@@ -10,8 +10,9 @@ import Subscribe from '../components/Subscribe'
 import ThreeColCard from '../components/ThreeColCard'
 import CalDisclosure from '../components/CalDisclosure'
 import ClassImages from '../components/ClassImages'
-import Contact from '../components/Contact'
-import Map from '../components/LeafletMap/'
+import LandingModal from '../components/LandingModal'
+// import Contact from '../components/Contact'
+// import Map from '../components/LeafletMap/'
 
 
 export default function Home() {
@@ -30,6 +31,8 @@ export default function Home() {
         <meta name="description" content="The Ivy is a premier art / event space and retail experience in Long Beach, New York." />
         <meta property="og:image" content="https://www.theivylbny.com/images/the-ivy-neon.png" key="ogimage" />
       </Head>
+
+      <LandingModal image='/images/vday.jpg'/>
 
       <Nav />
 
