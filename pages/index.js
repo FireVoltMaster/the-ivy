@@ -11,8 +11,6 @@ import ThreeColCard from '../components/ThreeColCard'
 import CalDisclosure from '../components/CalDisclosure'
 import ClassImages from '../components/ClassImages'
 import LandingModal from '../components/LandingModal'
-// import Contact from '../components/Contact'
-// import Map from '../components/LeafletMap/'
 
 
 export default function Home() {
@@ -32,9 +30,9 @@ export default function Home() {
         <meta property="og:image" content="https://www.theivylbny.com/images/the-ivy-neon.png" key="ogimage" />
       </Head>
 
-      {/* <LandingModal image='/images/landing-modal/vday.jpg'/> */}
-      <LandingModal image='/images/landing-modal/artsandcarafes.jpg'/>
-
+      <LandingModal 
+        image='/images/landing-modal/artsandcarafes.jpg'
+      />
 
       <Nav />
 
@@ -50,11 +48,8 @@ export default function Home() {
 
         <Subscribe />
         
-        {/* <Contact /> */}
-        
       </main>
 
-      {/* <Map /> */}
       <Footer />
 
     </div>

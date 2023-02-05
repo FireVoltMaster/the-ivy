@@ -36,7 +36,6 @@ export default function LandingModal(props) {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              {/* <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"> */}
               <Dialog.Panel className="relative flex-shrink-0 transform overflow-hidden rounded-xl bg-white pt-5 pb-5 text-left shadow-xl transition-all sm:my-8 w-full sm:max-w-lg">
                 
                 <div className="absolute top-0 right-0 pt-4 pr-2 lg:pr-4 sm:block">
@@ -46,20 +45,23 @@ export default function LandingModal(props) {
                     onClick={() => setOpen(false)}
                   >
                     <span className="sr-only">Close</span>
-                            {/* TODO: GET A REAL X SVG */}
-                        <p className="h-6 w-6" aria-hidden="true">X</p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+
                   </button>
                 </div>
 
                 <div className='pt-7'>
-                    <Image 
-                        src={props.image}
-                        alt='modal image'
-                        width="100%" 
-                        height="100%" 
-                        layout="responsive" 
-                        objectFit="contain"
-                    />
+                  <Image 
+                      src={props.image}
+                      alt='modal image'
+                      width="100%" 
+                      height="100%" 
+                      layout="responsive" 
+                      objectFit="contain"
+                  />
                 </div> 
 
               </Dialog.Panel>
