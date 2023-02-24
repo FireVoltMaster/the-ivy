@@ -1,7 +1,8 @@
 import React from "react"
 import Image from "next/image"
-import GoogleMap from "./GoogleMap"
+// import GoogleMap from "./GoogleMap"
 import Map from "./LeafletMap"
+import GoogleMap from "./BetterGoogleMap"
 
 const navigation = {
     social: [
@@ -92,8 +93,7 @@ const navigation = {
               <div className="grid">
                 <div>
 
-                    {/* <GoogleMap /> */}
-                    <Map />
+                    <GoogleMap />
 
                 </div>
               </div>
