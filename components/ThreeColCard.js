@@ -11,7 +11,7 @@ import Image from 'next/image'
         </div>
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center">
-            <h2 className="text-4xl tracking-tight font-thin text-gray-900 sm:text-4xl">#theivylbny</h2>
+            <h2 className="text-4xl tracking-tight font-thin text-gray-900 sm:text-4xl">#getlostintheivy</h2>
             {/* <p className="max-w-2xl mx-auto text-xl font-md text-neon-pink sm:mt-4">
               Take a peek into the world of
             </p> */}
@@ -30,9 +30,16 @@ import Image from 'next/image'
                 <InstagramEmbed 
                     url="https://www.instagram.com/p/CiijS4KvvHu/?igshid=N2NmMDY0OWE%3D" 
                     width={328} 
-                    height={520}
+                    height={540}
                 />
             </div>
+            {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <InstagramEmbed 
+                    url="https://www.instagram.com/reel/CpTLYCUPPjb/?igshid=YmMyMTA2M2Y=" 
+                    width={328} 
+                    height={520}
+                />
+            </div> */}
 
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <InstagramEmbed 

@@ -11,6 +11,7 @@ import ThreeColCard from '../components/ThreeColCard'
 import CalDisclosure from '../components/CalDisclosure'
 import ClassImages from '../components/ClassImages'
 import LandingModal from '../components/LandingModal'
+import FlyerDisplay from '../components/FlyerDisplay'
 
 
 export default function Home() {
@@ -30,9 +31,9 @@ export default function Home() {
         <meta property="og:image" content="https://www.theivylbny.com/images/the-ivy-neon.png" key="ogimage" />
       </Head>
 
-      <LandingModal 
+      {/* <LandingModal 
         image='/images/landing-modal/artsandcarafes.jpg'
-      />
+      /> */}
 
       <Nav />
 
@@ -40,7 +41,9 @@ export default function Home() {
 
         <Hero />
 
-        <ClassImages />
+        {/* <ClassImages /> */}
+
+        <FlyerDisplay />
 
         <CalDisclosure />
 
