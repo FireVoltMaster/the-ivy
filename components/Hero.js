@@ -10,7 +10,7 @@ export default function Hero() {
             className="absolute top-0 w-full h-full bg-center bg-cover bg-fixed"
             style={{
               backgroundImage:
-                "url('/images/ivy-wall.jpg')",
+                "url('/images/ivy-wall-16x80.jpg')",
             }}
           >
             <span
