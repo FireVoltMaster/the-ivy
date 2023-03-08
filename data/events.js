@@ -119,12 +119,140 @@ export const events = [
     //   tickets: '',
     //   eventPage: ''
     // },
+    // {
+    //   date: 'December 21, 2022',
+    //   title: "Sip & Paint BYOB",
+    //   description: "Winter Themed Painting",
+    //   time: '7PM',
+    //   tickets: 'https://wintersipandpaint.ezevent.com/',
+    //   eventPage: '/events/12-21-22'
+    // },
     {
-      date: 'December 21, 2022',
-      title: "Sip & Paint BYOB",
-      description: "Winter Themed Painting",
-      time: '7PM',
-      tickets: 'https://wintersipandpaint.ezevent.com/',
-      eventPage: '/events/12-21-22'
+      date: 'March 15, 2023',
+      title: "Craft Class",
+      description: "St Paddy's craft",
+      time: '6:30PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 16, 2023',
+      title: "Craft Class",
+      description: "Make your own candle and coaster",
+      time: '6:30PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 17, 2023',
+      title: "Private Event",
+      description: "",
+      time: '6:30PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 18, 2023',
+      title: "Kids Crafts",
+      description: "Sticker collage or make your own jewelry",
+      time: '2PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 19, 2023',
+      title: "Craft Class",
+      description: "Paint a coffee mug or beer mug",
+      time: '2PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 20, 2023',
+      title: "Chamber of Commerce Meeting",
+      description: "",
+      time: '6:30PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 21, 2023',
+      title: "Girl Scouts Meeting",
+      description: "Spring themed craft class",
+      time: '6PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 22, 2023',
+      title: "Private Event",
+      description: "",
+      time: '6PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 23, 2023',
+      title: "Welome Spring!",
+      description: "Vision board and meditation circle",
+      time: '6:30PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 24, 2023',
+      title: "Craft Class",
+      description: "Tie dye and rolling tray",
+      time: '6:30PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 25, 2023',
+      title: "Kids Craft",
+      description: "Multiple crafts to choose from",
+      time: '2PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 26, 2023',
+      title: "Sip & Paint",
+      description: "BYOB",
+      time: '2PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 29, 2023',
+      title: "Craft Class",
+      description: "Make your own jewelry",
+      time: '6:30PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 30, 2023',
+      title: "Sip & Paint",
+      description: "BYOB",
+      time: '6:30PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'March 31, 2023',
+      title: "Craft Class",
+      description: "Make your own candle and coaster",
+      time: '6:30PM',
+      tickets: '',
+      eventPage: ''
+    },
+    {
+      date: 'April 1, 2023',
+      title: "Kids Craft",
+      description: "Multiple crafts to choose from",
+      time: '2PM',
+      tickets: '',
+      eventPage: ''
     },
 ]
