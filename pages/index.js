@@ -12,6 +12,7 @@ import CalDisclosure from '../components/CalDisclosure'
 import ClassImages from '../components/ClassImages'
 import LandingModal from '../components/LandingModal'
 import FlyerDisplay from '../components/FlyerDisplay'
+import { ScrollToTop } from '../components/ScrollToTop'
 
 
 export default function Home() {
@@ -36,6 +37,8 @@ export default function Home() {
       /> */}
 
       <Nav />
+
+      <ScrollToTop />
 
       <main>
 
