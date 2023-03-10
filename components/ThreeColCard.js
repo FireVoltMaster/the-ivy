@@ -11,7 +11,7 @@ import Image from 'next/image'
         </div>
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center">
-            <h2 className="text-4xl tracking-tight font-thin text-gray-900 sm:text-4xl">#getlostintheivy</h2>
+            <h2 className="text-4xl tracking-tight font-thin text-gray-900 sm:text-4xl">#GetLostInTheIvy</h2>
             {/* <p className="max-w-2xl mx-auto text-xl font-md text-neon-pink sm:mt-4">
               Take a peek into the world of
             </p> */}

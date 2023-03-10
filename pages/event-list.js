@@ -13,8 +13,8 @@ export default function EventList() {
   return (
     <div className="bg-white overflow-hidden">
       <Head>
-          <title>Events at The Ivy</title>
-          <meta name="description" content="Events happening at The Ivy in Long Beach, New York." />
+          <title>Events at The Ivy, LBNY</title>
+          <meta name="description" content="Upcoming events happening at The Ivy in Long Beach, New York. Buy tickets to upcoming craft classes and events." />
           <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <div className="flex justify-center pt-3 -mb-36">
@@ -49,6 +49,7 @@ export default function EventList() {
                 <h2 className="text-3xl text-neon-pink font-semibold tracking-wide">
                   Upcoming events happening at The Ivy
                 </h2>
+                <h2 className="pt-4 text-4xl tracking-tight font-thin text-gray-900 sm:text-4xl">#GetLostInTheIvy</h2>
 
                 {/* 
                 //////////////////////////////////////////////////////////////////// 
@@ -56,9 +57,11 @@ export default function EventList() {
                 ///////////////////////////////////////////////////////////////////// 
                   NOW SHES GOING BACK TO INDIVIDUAL PAGES, BUTTON IS HERE IF WE NEED
                 //////////////////////////////////////////////////////////////////////
+                  BACK TO EZEVENT LINK
+                //////////////////////////////////////////////////////////////////////
                 */}
-                {/* <Link href="https://novembereventcalendar.ezevent.com">
-                  <a className="flex flex-row" target="_blank">
+                <Link href="https://www.eventbrite.com/e/craft-night-at-the-ivy-in-long-beach-tickets-580028509887">
+                  <a className="-z-10 flex flex-row" target="_blank">
                     <button
                         type="button"
                         className="z-50 px-3.5 mt-8 py-2 bg-gradient-to-b from-neon-pink via-neon-pink to-pink-400 text-white hover:bg-gradient-to-t from-neon-pink via-neon-pink to-pink-400 hover:text-white font-light rounded-md text-lg flex flex-row items-center"
@@ -67,11 +70,11 @@ export default function EventList() {
                           <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
                       </svg>
                         <div className="pl-3">
-                          November Tickets
+                          Tickets for March events
                         </div>
                     </button>
                   </a>
-                </Link> */}
+                </Link>
           </div>
         </div>
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -98,6 +101,15 @@ export default function EventList() {
               </defs>
               <rect width={404} height={384} fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
             </svg>
+            <Image
+              src="/images/events/marchcal.jpg"
+              alt="the ivy"
+              width={600}
+              height={600}
+              blurDataURL="/images/events/marchcal.jpg"
+              placeholder="blur"
+              loading="lazy"
+            />
           </div>
           
           <div className="mt-8 lg:mt-0">

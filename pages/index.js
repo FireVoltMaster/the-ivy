@@ -27,7 +27,7 @@ export default function Home() {
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
       /> */}
       <Head>
-        <title>The Ivy</title>
+        <title>The Ivy LBNY</title>
         <meta name="description" content="The Ivy is a premier art / event space and retail experience in Long Beach, New York." />
         <meta property="og:image" content="https://www.theivylbny.com/images/the-ivy-neon.png" key="ogimage" />
       </Head>
