@@ -36,7 +36,7 @@ export default function FlyerDisplay() {
 
           <div className="hover:scale-110 ease-in-out duration-200">
             <Image
-              data-aos="fade-up" data-aos-delay="500"
+              data-aos="fade-up" data-aos-delay="400"
               className="max-w-full h-auto rounded-xl"
               src="/images/flyer-display/partyannouncement.jpg"
               height={450}
@@ -50,7 +50,7 @@ export default function FlyerDisplay() {
 
           <div className="hover:scale-110 ease-in-out duration-200">
             <Image
-              data-aos="fade-up" data-aos-delay="700"
+              data-aos="fade-up" data-aos-delay="500"
               className="max-w-full h-auto rounded-xl"
               src="/images/flyer-display/weeklycrafts.jpeg"
               height={450}
@@ -65,7 +65,7 @@ export default function FlyerDisplay() {
           {/* lg:col-start-2 centers the fourth image */}
           <div className="hover:scale-110 ease-in-out duration-200 lg:col-start-2">
             <Image
-              data-aos="fade-up" data-aos-delay="700"
+              data-aos="fade-up" data-aos-delay="400"
               className="max-w-full h-auto rounded-xl"
               src="/images/flyer-display/craftmenu.jpeg"
               height={450}

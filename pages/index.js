@@ -9,7 +9,6 @@ import Hero from '../components/Hero'
 import Subscribe from '../components/Subscribe'
 import ThreeColCard from '../components/ThreeColCard'
 import CalDisclosure from '../components/CalDisclosure'
-import ClassImages from '../components/ClassImages'
 import LandingModal from '../components/LandingModal'
 import FlyerDisplay from '../components/FlyerDisplay'
 import { ScrollToTop } from '../components/ScrollToTop'
@@ -31,33 +30,19 @@ export default function Home() {
         <meta name="description" content="The Ivy is a premier art / event space and retail experience in Long Beach, New York." />
         <meta property="og:image" content="https://www.theivylbny.com/images/the-ivy-neon.png" key="ogimage" />
       </Head>
-
       {/* <LandingModal 
         image='/images/landing-modal/artsandcarafes.jpg'
       /> */}
-
       <Nav />
-
       <ScrollToTop />
-
       <main>
-
         <Hero />
-
-        {/* <ClassImages /> */}
-
         <FlyerDisplay />
-
         <CalDisclosure />
-
         <ThreeColCard />
-
-        <Subscribe />
-        
+        <Subscribe /> 
       </main>
-
       <Footer />
-
     </div>
   )
 }
