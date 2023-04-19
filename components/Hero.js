@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Hero() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      // disable: 'phone',
+      duration: 800,
+      easing: 'ease-out-sine',
+    })
+  })
+
   return (
     <div>
         <div className="relative pt-32 pb-12 flex content-center items-center justify-center min-h-screen-75">
@@ -23,7 +34,7 @@ export default function Hero() {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 {/* <div className="hover:scale-125 ease-in-out duration-200"> */}
-                <div className="">
+                <div data-aos="fade-up" data-aos-delay="300" className="">
                     <Image
                       src="/images/the-ivy-neon.png"
                       width={350}
@@ -33,7 +44,6 @@ export default function Hero() {
                       placeholder="blur"
                       priority
                     />
-
                 </div>
                 <div className="py-5 px-1 bg-neon-pink/80 rounded-2xl sm:py-10 sm:px-10 lg:p-10 lg:items-center">
                   <p className="text-white text-xl lg:text-3xl font-thin">
