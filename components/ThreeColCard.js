@@ -36,7 +36,7 @@ import 'aos/dist/aos.css'
           </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
 
-            <div data-aos="fade-right" data-aos-delay="200" style={{ display: 'flex', justifyContent: 'center' }}>
+            <div data-aos="fade-up" data-aos-delay="200" style={{ display: 'flex', justifyContent: 'center' }}>
                 <InstagramEmbed 
                     url="https://www.instagram.com/p/CiijS4KvvHu/?igshid=N2NmMDY0OWE%3D" 
                     width={328} 
@@ -59,7 +59,7 @@ import 'aos/dist/aos.css'
                 />
             </div>
 
-            <div data-aos="fade-left" data-aos-delay="700" style={{ display: 'flex', justifyContent: 'center' }}>
+            <div data-aos="fade-up" data-aos-delay="700" style={{ display: 'flex', justifyContent: 'center' }}>
                 <InstagramEmbed 
                     url="https://www.instagram.com/reel/CjqlEtapKg1/?igshid=N2NmMDY0OWE%3D" 
                     width={328} 
