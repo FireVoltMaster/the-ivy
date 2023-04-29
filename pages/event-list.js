@@ -103,12 +103,12 @@ export default function EventList() {
               <rect width={404} height={384} fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
             </svg>
             <Image
-              src="/images/insideivy.jpeg"
+              src="/images/events/may23cal.jpg"
               className="rounded-xl"
               alt="the ivy"
               width={900}
-              height={600}
-              blurDataURL="/images/insideivy.jpeg"
+              height={700}
+              blurDataURL="/images/events/may23cal.jpg"
               placeholder="blur"
               loading="lazy"
             />
