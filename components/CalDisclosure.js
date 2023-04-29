@@ -3,12 +3,8 @@ import { ChevronDownIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 
 // MONTHS
-// import AugustCalendar from './Calendar/Months/August22/August22Calendar'
-// import SeptemberCalendar from './Calendar/Months/September22/September22Calendar'
-// import OctobrrCalendar from './Calendar/Months/October22/October22Calendar'
-// import NovemberCalendar from './Calendar/Months/November22/November22Calendar'
-// import DecemberCalendar from './Calendar/Months/December/December22Calendar'
-import MarchCalendar from './Calendar/Months/March23/March23Calendar'
+import MayCalendar from './Calendar/Months/May23/May23Calendar'
+import JuneCalendar from './Calendar/Months/June23/June23Calendar'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -32,32 +28,6 @@ export default function CalDisclosure() {
           </div>
           <dl className="mt-6 space-y-6 divide-y divide-gray-200">
 
-            {/* March */}
-            <Disclosure as="div" className="pt-6">
-              {({ open }) => (
-                <>
-                  <dt className="text-lg">
-                    <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
-                      <span className="font-base text-3xl text-gray-900">
-                        March 🌸
-                      </span>
-                      <span className="ml-6 h-7 flex items-center">
-                        <ChevronDownIcon
-                          className={classNames(open ? 'transition duration-300 ease-in-out transform -rotate-180' : 'rotate-0', 'transition duration-300 ease-in-out h-6 w-6 transform')}
-                          aria-hidden="true"
-                        />
-                      </span>
-                    </Disclosure.Button>
-                  </dt>
-                  <Disclosure.Panel as="dd" className="mt-2">
-
-                      <MarchCalendar />
-
-                  </Disclosure.Panel>
-                </>
-              )}
-            </Disclosure>
-
             {/* May */}
             <Disclosure as="div" className="pt-6">
               {({ open }) => (
@@ -65,7 +35,7 @@ export default function CalDisclosure() {
                   <dt className="text-lg">
                     <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
                       <span className="font-base text-3xl text-gray-900">
-                        May 👀
+                        May 🌼
                       </span>
                       <span className="ml-6 h-7 flex items-center">
                         <ChevronDownIcon
@@ -76,9 +46,37 @@ export default function CalDisclosure() {
                     </Disclosure.Button>
                   </dt>
                   <Disclosure.Panel as="dd" className="mt-2">
-                      <p className='text-center text-5xl lg:text-7xl font-hurricane animate-bounce'>
+                      {/* <p className='text-center text-5xl lg:text-7xl font-hurricane animate-bounce'>
                         May events calendar coming soon!
-                      </p>
+                      </p> */}
+                      <MayCalendar />
+                  </Disclosure.Panel>
+                </>
+              )}
+            </Disclosure>
+
+            {/* June */}
+            <Disclosure as="div" className="pt-6">
+              {({ open }) => (
+                <>
+                  <dt className="text-lg">
+                    <Disclosure.Button className="text-left w-full flex justify-between items-start text-gray-400">
+                      <span className="font-base text-3xl text-gray-900">
+                        June 🌈
+                      </span>
+                      <span className="ml-6 h-7 flex items-center">
+                        <ChevronDownIcon
+                          className={classNames(open ? 'transition duration-300 ease-in-out transform -rotate-180' : 'rotate-0', 'transition duration-300 ease-in-out h-6 w-6 transform')}
+                          aria-hidden="true"
+                        />
+                      </span>
+                    </Disclosure.Button>
+                  </dt>
+                  <Disclosure.Panel as="dd" className="mt-2">
+                      {/* <p className='text-center text-5xl lg:text-7xl font-hurricane animate-bounce'>
+                        May events calendar coming soon!
+                      </p> */}
+                      <JuneCalendar />
                   </Disclosure.Panel>
                 </>
               )}

@@ -61,7 +61,7 @@ export default function EventList() {
               BACK TO EZEVENT LINK
             //////////////////////////////////////////////////////////////////////
             */}
-            <Link href="https://www.eventbrite.com/e/craft-night-at-the-ivy-in-long-beach-tickets-580028509887">
+            <Link href="https://www.eventbrite.com/e/626820044627">
               <a className="-z-10 flex flex-row" target="_blank">
                 <button
                     type="button"
@@ -71,7 +71,7 @@ export default function EventList() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z" />
                   </svg>
                   <div className="pl-3">
-                    Tickets for March events
+                    Tickets for May events
                   </div>
                 </button>
               </a>
@@ -103,11 +103,12 @@ export default function EventList() {
               <rect width={404} height={384} fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
             </svg>
             <Image
-              src="/images/events/marchcal.jpg"
+              src="/images/insideivy.jpeg"
+              className="rounded-xl"
               alt="the ivy"
-              width={600}
+              width={900}
               height={600}
-              blurDataURL="/images/events/marchcal.jpg"
+              blurDataURL="/images/insideivy.jpeg"
               placeholder="blur"
               loading="lazy"
             />
