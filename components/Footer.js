@@ -21,7 +21,7 @@ const navigation = {
       // },
       {
         name: 'Instagram',
-        href: 'https://www.instagram.com/the_ivy_lbny/',
+        href: 'https://www.instagram.com/theivy_lbny/',
         icon: (props) => (
           <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
             <path
