@@ -11,6 +11,7 @@ import ThreeColCard from '../components/ThreeColCard'
 import CalDisclosure from '../components/CalDisclosure'
 import LandingModal from '../components/LandingModal'
 import FlyerDisplay from '../components/FlyerDisplay'
+import GiftCards from '../components/GiftCards'
 import { ScrollToTop } from '../components/ScrollToTop'
 
 
@@ -38,6 +39,7 @@ export default function Home() {
       <main>
         <Hero />
         <FlyerDisplay />
+        <GiftCards />
         <CalDisclosure />
         <ThreeColCard />
         <Subscribe /> 
