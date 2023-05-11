@@ -14,10 +14,8 @@ export default function FlyerDisplay() {
   })
 
   return (
-    // <div className="relative bg-[#fe68c3] pt-12 pb-8 px-4 sm:px-6 lg:pt-26 lg:pb-26 lg:px-8">
     <div
-      className="relative bg-cover bg-center bg-fixed pt-12 pb-8 px-4 sm:px-6 lg:pt-26 lg:pb-26 lg:px-8"
-      style={{ backgroundImage: "url('/images/insideivy.jpg')" }}
+      className="relative bg-cover bg-center bg-fixed bg-[#fe68c3] md:bg-[url('/images/ivy-bg-16x80.jpg')] lg:bg-[url('/images/ivy-bg-16x80.jpg')] pt-12 pb-8 px-4 sm:px-6 lg:pt-26 lg:pb-26 lg:px-8"
     >
       <div className="absolute inset-0">
         <div className="bg-white h-1/3 sm:h-2/3" />

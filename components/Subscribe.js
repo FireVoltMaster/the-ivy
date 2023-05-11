@@ -70,7 +70,7 @@ export default function Subscribe() {
           className="bg-center bg-cover bg-fixed"
           style={{
             backgroundImage:
-              "url('/images/ivy-bg.jpg')",
+              "url('/images/ivy-bg-16x80.jpg')",
           }}>
             {/* <span
               id="blackOverlay"
