@@ -26,11 +26,11 @@ export default function FlyerDisplay() {
             <Image
               data-aos="fade-up" data-aos-delay="200"
               className="max-w-full h-auto rounded-xl"
-              src="/images/flyer-display/newhours.jpg"
+              src="/images/flyer-display/mayjunecraftflyer.jpg"
               height={450}
               width={350}
               alt="Flyer 1"
-              blurDataURL="/images/flyer-display/newhours.jpg"
+              blurDataURL="/images/flyer-display/mayjunecraftflyer.jpg"
               placeholder="blur"
               loading="lazy"
             />
@@ -38,7 +38,7 @@ export default function FlyerDisplay() {
 
           <div className="hover:scale-110 ease-in-out duration-200">
             <Image
-              data-aos="fade-up" data-aos-delay="400"
+              data-aos="fade-up" data-aos-delay="300"
               className="max-w-full h-auto rounded-xl"
               src="/images/flyer-display/partyannouncement.jpg"
               height={450}
@@ -52,20 +52,20 @@ export default function FlyerDisplay() {
 
           <div className="hover:scale-110 ease-in-out duration-200">
             <Image
-              data-aos="fade-up" data-aos-delay="500"
+              data-aos="fade-up" data-aos-delay="400"
               className="max-w-full h-auto rounded-xl"
-              src="/images/flyer-display/weeklycrafts.jpeg"
+              src="/images/flyer-display/craftmenu.jpeg"
               height={450}
               width={350}
               alt="Flyer 3"
-              blurDataURL="/images/flyer-display/weeklycrafts.jpeg"
+              blurDataURL="/images/flyer-display/craftmenu.jpeg"
               placeholder="blur"
               loading="lazy"
             />
           </div>
 
           {/* lg:col-start-2 centers the fourth image */}
-          <div className="hover:scale-110 ease-in-out duration-200 lg:col-start-2">
+          {/* <div className="hover:scale-110 ease-in-out duration-200 lg:col-start-2">
             <Image
               data-aos="fade-up" data-aos-delay="400"
               className="max-w-full h-auto rounded-xl"
@@ -77,7 +77,7 @@ export default function FlyerDisplay() {
               placeholder="blur"
               loading="lazy"
             />
-          </div>
+          </div> */}
 
         </div>
       </div>
