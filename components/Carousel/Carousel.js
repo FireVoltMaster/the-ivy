@@ -5,34 +5,51 @@ import Image from 'next/image'
 
 
 // Arrow icons as SVG components
-// const PrevArrow = () => (
-//     <svg
-//       xmlns="http://www.w3.org/2000/svg"
-//       viewBox="0 0 24 24"
-//       fill="currentColor"
-//       stroke="currentColor"
-//       strokeWidth="2"
-//       strokeLinecap="round"
-//       strokeLinejoin="round"
-//       className="w-6 h-6"
-//     >
-//       <path d="M15 18l-6-6 6-6" />
-//     </svg>
-// )
-// const NextArrow = () => (
-//     <svg
-//         xmlns="http://www.w3.org/2000/svg"
-//         viewBox="0 0 24 24"
-//         fill="currentColor"
-//         stroke="currentColor"
-//         strokeWidth="2"
-//         strokeLinecap="round"
-//         strokeLinejoin="round"
-//         className="w-6 h-6"
-//     >
-//         <path d="M9 18l6-6-6-6" />
-//     </svg>
-// )
+/* NOT USING ARROWS YET
+const PrevArrow = () => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-6 h-6"
+    >
+      <path d="M15 18l-6-6 6-6" />
+    </svg>
+)
+const NextArrow = () => (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="w-6 h-6"
+    >
+        <path d="M9 18l6-6-6-6" />
+    </svg>
+)
+*/
+
+const images = [
+  {
+    id: 1,
+    src: "/images/carousel/insideshop1.jpg"
+  },
+  {
+    id: 2,
+    src: "/images/carousel/insideshop2.jpg"
+  },
+  {
+    id: 3,
+    src: "/images/carousel/insideshop3.jpg"
+  },
+]
 
 export const EmblaCarousel = () => {
     const autoplayOptions = {
@@ -42,47 +59,69 @@ export const EmblaCarousel = () => {
 
     const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay(autoplayOptions)])
     
-    // const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
-    // const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
-    // const [selectedIndex, setSelectedIndex] = useState(0);
+    /*
+    // This is for future prev & next buttons
+    const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
+    const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
+    const [selectedIndex, setSelectedIndex] = useState(0);
   
-    // const scrollPrev = useCallback(() => emblaApi.scrollPrev(), []);
-    // const scrollNext = useCallback(() => emblaApi.scrollNext(), []);
-    // const scrollTo = useCallback((index) => emblaApi.scrollTo(index), []);
+    const scrollPrev = useCallback(() => emblaApi.scrollPrev(), []);
+    const scrollNext = useCallback(() => emblaApi.scrollNext(), []);
+    const scrollTo = useCallback((index) => emblaApi.scrollTo(index), []);
     
-    // useEffect(() => {
-    //     const emblaApi = emblaRef && emblaRef.current
-    //   if (!emblaApi) return;
+    useEffect(() => {
+        const emblaApi = emblaRef && emblaRef.current
+      if (!emblaApi) return;
     
-    //   // Enable/disable arrow buttons based on Embla state
-    //   setPrevBtnEnabled(emblaApi.canScrollPrev());
-    //   setNextBtnEnabled(emblaApi.canScrollNext());
+      // Enable/disable arrow buttons based on Embla state
+      setPrevBtnEnabled(emblaApi.canScrollPrev());
+      setNextBtnEnabled(emblaApi.canScrollNext());
     
-    //   // Listen to Embla events to update state
-    //   const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
-    //   const onScroll = () => {
-    //     setPrevBtnEnabled(emblaApi.canScrollPrev());
-    //     setNextBtnEnabled(emblaApi.canScrollNext());
-    //   };
-    //   emblaApi.on("select", onSelect);
-    //   emblaApi.on("scroll", onScroll);
-    //   return () => {
-    //     emblaApi.off("select", onSelect);
-    //     emblaApi.off("scroll", onScroll);
-    //   };
-    // }, [emblaRef]);
+      // Listen to Embla events to update state
+      const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
+      const onScroll = () => {
+        setPrevBtnEnabled(emblaApi.canScrollPrev());
+        setNextBtnEnabled(emblaApi.canScrollNext());
+      };
+      emblaApi.on("select", onSelect);
+      emblaApi.on("scroll", onScroll);
+      return () => {
+        emblaApi.off("select", onSelect);
+        emblaApi.off("scroll", onScroll);
+      };
+    }, [emblaRef]);
+    */
     
 
   return (
-    <div className="embla" ref={emblaRef}>
+    <div className="embla mx-auto max-w-screen-lg w-full" ref={emblaRef}>
       <div className="embla__container">
+      {/* {images.map((image) => (
+           <div key={image.id}>
+            <div className="embla__slide">
+              <Image
+                className="w-full h-auto rounded-xl"
+                src={image.src}
+                height={650}
+                width={1000}
+                // layout="fill"
+                // objectFit="cover"
+                alt="Image 1"
+                blurDataURL="/images/carousel/insideshop1.jpg"
+                placeholder="blur"
+                loading="lazy"
+              />
+            </div>
+           </div> 
+        ))} */}
+        {/* 👆 Not sure why when we map over images the sizes become tiny and uncontrollable */}
         <div className="embla__slide">
             <Image
-              className="max-w-full h-auto rounded-xl"
+              className="w-full h-auto rounded-xl"
               src="/images/carousel/insideshop1.jpg"
-              height={550}
-              width={850}
-              alt="Flyer 1"
+              height={650}
+              width={1000}
+              alt="Image 1"
               blurDataURL="/images/carousel/insideshop1.jpg"
               placeholder="blur"
               loading="lazy"
@@ -90,11 +129,11 @@ export const EmblaCarousel = () => {
         </div>
         <div className="embla__slide">
             <Image
-              className="max-w-full h-auto rounded-xl"
+              className="w-full h-auto rounded-xl"
               src="/images/carousel/insideshop2.jpg"
-              height={550}
-              width={850}
-              alt="Flyer 1"
+              height={650}
+              width={1000}
+              alt="Image 2"
               blurDataURL="/images/carousel/insideshop2.jpg"
               placeholder="blur"
               loading="lazy"
@@ -102,11 +141,11 @@ export const EmblaCarousel = () => {
         </div>
         <div className="embla__slide">
             <Image
-              className="max-w-full h-auto rounded-xl"
+              className="w-full h-auto rounded-xl"
               src="/images/carousel/insideshop3.jpg"
-              height={550}
-              width={850}
-              alt="Flyer 1"
+              height={650}
+              width={1000}
+              alt="Image 3"
               blurDataURL="/images/carousel/insideshop3.jpg"
               placeholder="blur"
               loading="lazy"
@@ -115,6 +154,8 @@ export const EmblaCarousel = () => {
       </div>
     </div>
   )
+
+    // 👇 Started prev & next arrows
     // return (
     //     <div className="embla">
     //         <div className="embla__container" ref={emblaRef}>

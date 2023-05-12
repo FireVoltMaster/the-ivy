@@ -39,8 +39,10 @@ export default function Home() {
       <ScrollToTop />
       <main>
         <Hero />
-        {/* <FlyerDisplay /> */}
-        <EmblaCarousel />
+        <div className="pt-10">
+          <EmblaCarousel />
+        </div>
+        <FlyerDisplay />
         <GiftCards />
         <CalDisclosure />
         <ThreeColCard />
